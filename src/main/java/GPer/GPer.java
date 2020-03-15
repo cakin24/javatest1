@@ -19,5 +19,21 @@ public class GPer extends Observable{
         System.out.println(question.getUsername()+"在"+this.name+"上提交了一个问题。");
         setChanged();
         notifyObservers(question);
+        int a = 0;
+        int b = 0;
+        a = test1(b);
     }
+
+
+    /**
+     * @Author cwx897169 on 2020/3/1 20:22
+     * @param: 
+     * @return: 
+     * @Description:
+     */   
+    private int test1( int b ) {
+        return 0;
+    }
+
+
 }

@@ -9,12 +9,14 @@ import java.io.*;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
+import static org.apache.xmlbeans.impl.store.Public2.test;
+
 /**
  * Copyright (C), 2020-2020, XXX有限公司
  * FileName: ZipFile
  * Author:   cakin
  * Date:     2020/1/18
- * Description: 将文件夹压缩成文件,该范例重点关注资源关闭的顺序
+ * Description: 将文件夹压缩成zip文件,该范例重点关注资源关闭的顺序
  * 在开启了资源后，就要按照打开的顺序，依次相反地关闭资源。
  */
 public class ZipFile {
