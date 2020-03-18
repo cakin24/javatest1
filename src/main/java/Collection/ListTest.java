@@ -128,25 +128,25 @@ public class ListTest {
     }
 
     /**
-     * ��List�����һЩ��ֵĶ���
+     * 往List中添加一些奇怪的东西
      *
      * @param args
      */
     public void testType() {
-        System.out.println("�ܷ���List�����һЩ��ֵĶ����أ���");
-        coursesToSelect.add("�Ҳ��ǿγ̣���ֻ��һ���޹����ַ�������");
+        System.out.println("能够往List中添加一些奇怪的东西呢");
+        coursesToSelect.add("我不是课程，我只是一个无辜的字符串");
     }
 
     public static void main( String[] args ) {
         ListTest lt = new ListTest();
         lt.testAdd();
-//        lt.testType();
-//        lt.testForEach();
+        lt.testType();
+        lt.testForEach();
 //		lt.testGet();
 //		lt.testIterator();
-		lt.testForEach();
-		lt.testModify();
-		lt.testForEach();
-		lt.testRemove();
+//		lt.testForEach();
+//		lt.testModify();
+//		lt.testForEach();
+//		lt.testRemove();
     }
 }
