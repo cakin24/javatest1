@@ -78,6 +78,7 @@ public class SetTest {
 					 */
 //					 student.courses.add(null);
 					//student.courses.add(cr);
+
 				}
 			}
 		}

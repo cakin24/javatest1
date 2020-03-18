@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bc6153e-427e-4b65-a0a4-491de75f6135" name="Default" comment="静态代理">
-      <change afterPath="$PROJECT_DIR$/src/main/java/RegexMatches/RegexExample1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Map/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Map/MapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Map/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Collection/SetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Collection/SetTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +61,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/DataBaseProxy" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../springboot/37736/code/03/HelloWord" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/Map" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
@@ -66,21 +69,25 @@
       <recent name="CGlib" />
       <recent name="GPProxy" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Javatest\src\main\java\Map" />
+      <recent name="F:\Javatest\src\main\java\Collection" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.RegexMatches3">
+  <component name="RunManager" selected="Application.MapTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="RegexExample1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RegexMatches.RegexExample1" />
+    <configuration name="ListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Collection.ListTest" />
       <module name="Javatest" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="RegexMatches.*" />
+          <option name="PATTERN" value="Collection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,27 +95,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegexMatches" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RegexMatches.RegexMatches" />
+    <configuration name="MapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Map.MapTest" />
       <module name="Javatest" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="RegexMatches.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegexMatches2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RegexMatches.RegexMatches2" />
-      <module name="Javatest" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="RegexMatches.*" />
+          <option name="PATTERN" value="Map.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,13 +123,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GPer.Test" />
+    <configuration name="SetTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Collection.SetTest" />
       <module name="Javatest" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="GPer.*" />
+          <option name="PATTERN" value="Collection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGeneric" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Collection.TestGeneric" />
+      <module name="Javatest" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Collection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -176,19 +183,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Test (1)" />
-      <item itemvalue="Application.RegexMatches" />
-      <item itemvalue="Application.RegexExample1" />
-      <item itemvalue="Application.RegexMatches2" />
       <item itemvalue="Application.RegexMatches3" />
+      <item itemvalue="Application.ListTest" />
+      <item itemvalue="Application.TestGeneric" />
+      <item itemvalue="Application.SetTest" />
+      <item itemvalue="Application.MapTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MapTest" />
+        <item itemvalue="Application.SetTest" />
+        <item itemvalue="Application.TestGeneric" />
+        <item itemvalue="Application.ListTest" />
         <item itemvalue="Application.RegexMatches3" />
-        <item itemvalue="Application.RegexMatches2" />
-        <item itemvalue="Application.RegexExample1" />
-        <item itemvalue="Application.RegexMatches" />
-        <item itemvalue="Application.Test (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -252,7 +259,63 @@
       <option name="project" value="LOCAL" />
       <updated>1584261224102</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="静态代理">
+      <created>1584267518411</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1584267518411</updated>
+    </task>
+    <task id="LOCAL-00009" summary="静态代理">
+      <created>1584516519010</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1584516519010</updated>
+    </task>
+    <task id="LOCAL-00010" summary="静态代理">
+      <created>1584516848540</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1584516848540</updated>
+    </task>
+    <task id="LOCAL-00011" summary="静态代理">
+      <created>1584517881688</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1584517881688</updated>
+    </task>
+    <task id="LOCAL-00012" summary="静态代理">
+      <created>1584517957423</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1584517957423</updated>
+    </task>
+    <task id="LOCAL-00013" summary="静态代理">
+      <created>1584518615412</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1584518615412</updated>
+    </task>
+    <task id="LOCAL-00014" summary="静态代理">
+      <created>1584519155194</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1584519155194</updated>
+    </task>
+    <task id="LOCAL-00015" summary="静态代理">
+      <created>1584520272522</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1584520272522</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -260,7 +323,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -271,34 +336,34 @@
     <option name="LAST_COMMIT_MESSAGE" value="静态代理" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="633" y="113" key="CommitChangelistDialog2" timestamp="1584261221542">
+    <state x="633" y="113" key="CommitChangelistDialog2" timestamp="1584520271013">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="633" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584261221542" />
-    <state width="1876" height="289" key="GridCell.Tab.0.bottom" timestamp="1584267496600">
+    <state x="633" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584520271013" />
+    <state width="1877" height="334" key="GridCell.Tab.0.bottom" timestamp="1584530140452">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="289" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584267496600" />
-    <state width="1876" height="289" key="GridCell.Tab.0.center" timestamp="1584267496600">
+    <state width="1877" height="334" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584530140452" />
+    <state width="1877" height="334" key="GridCell.Tab.0.center" timestamp="1584530140452">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="289" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584267496600" />
-    <state width="1876" height="289" key="GridCell.Tab.0.left" timestamp="1584267496600">
+    <state width="1877" height="334" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584530140452" />
+    <state width="1877" height="334" key="GridCell.Tab.0.left" timestamp="1584530140452">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="289" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584267496600" />
-    <state width="1876" height="289" key="GridCell.Tab.0.right" timestamp="1584267496600">
+    <state width="1877" height="334" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584530140452" />
+    <state width="1877" height="334" key="GridCell.Tab.0.right" timestamp="1584530140452">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="289" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584267496600" />
+    <state width="1877" height="334" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584530140452" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1584236261727">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584236261727" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1584261232254">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1584520274652">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584261232254" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584520274652" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
