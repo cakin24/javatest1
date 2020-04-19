@@ -4,9 +4,10 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * ѧ����
- * @author Administrator
- *
+ * @className: Student
+ * @description: 学生类
+ * @date: 2020/4/19
+ * @author: cakin
  */
 public class Student {
 

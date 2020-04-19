@@ -2,115 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bc6153e-427e-4b65-a0a4-491de75f6135" name="Default" comment="静态代理">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AC220/AC220.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AC220/AC220.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AC220/DC5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AC220/DC5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AC220/PowerAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AC220/PowerAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AC220/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AC220/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Battercake/BaseBattercake.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Battercake/BaseBattercake.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Battercake/Battercake.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Battercake/Battercake.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Battercake/BattercakeDecorator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Battercake/BattercakeDecorator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Battercake/EggDecorator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Battercake/EggDecorator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Battercake/SausageDecorator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Battercake/SausageDecorator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Battercake/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Battercake/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CGlib/CGLibTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CGlib/CGLibTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CGlib/CglibMeipo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CGlib/CglibMeipo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CGlib/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CGlib/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DataBaseProxy/DynamicDataSourcrEntry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DataBaseProxy/DynamicDataSourcrEntry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DataBaseProxy/IOrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DataBaseProxy/IOrderService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DataBaseProxy/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DataBaseProxy/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DataBaseProxy/OrderServiceStaticProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DataBaseProxy/OrderServiceStaticProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DataBaseProxy/a/orderDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DataBaseProxy/a/orderDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DataDynamicProxy/DynamicDataSourcrEntry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DataDynamicProxy/DynamicDataSourcrEntry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DataDynamicProxy/IOrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DataDynamicProxy/IOrderService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DataDynamicProxy/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DataDynamicProxy/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DataDynamicProxy/OrderDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DataDynamicProxy/OrderDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DataDynamicProxy/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DataDynamicProxy/OrderService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DataDynamicProxy/OrderServiceDynamicProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DataDynamicProxy/OrderServiceDynamicProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DataDynamicProxy/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DataDynamicProxy/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Delegate/Boss.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Delegate/Boss.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Delegate/DelegateTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Delegate/DelegateTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Delegate/EmpolyeeA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Delegate/EmpolyeeA.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Delegate/EmpolyeeB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Delegate/EmpolyeeB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Delegate/IEmployee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Delegate/IEmployee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Delegate/Leader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Delegate/Leader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExectorThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExectorThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/GPProxy/CustomMeipo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GPProxy/CustomMeipo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/GPProxy/CustomPorxyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GPProxy/CustomPorxyTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/GPProxy/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GPProxy/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/GPProxy/GPClassLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GPProxy/GPClassLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/GPProxy/GPInvocationHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GPProxy/GPInvocationHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/GPProxy/GPProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GPProxy/GPProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/GPProxy/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GPProxy/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/GPer/GPer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GPer/GPer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/GPer/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GPer/Question.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/GPer/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GPer/Teacher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/GPer/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GPer/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Guava/GuavaEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Guava/GuavaEvent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Guava/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Guava/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JdbcTemplate/JdbcTemplate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JdbcTemplate/JdbcTemplate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JdbcTemplate/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JdbcTemplate/Member.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JdbcTemplate/MemberDao$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JdbcTemplate/MemberDao$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JdbcTemplate/MemberDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JdbcTemplate/MemberDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JdbcTemplate/RowMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JdbcTemplate/RowMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JdbcTemplate/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JdbcTemplate/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Jdkproxy/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Jdkproxy/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Jdkproxy/JDKMeipo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Jdkproxy/JDKMeipo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Jdkproxy/JDKProxyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Jdkproxy/JDKProxyTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Jdkproxy/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Jdkproxy/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Jdkproxy/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Jdkproxy/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LazySimpleSingleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LazySimpleSingleton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LazySimpletonTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LazySimpletonTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LoginAdapter/IPassportForThird.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoginAdapter/IPassportForThird.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LoginAdapter/LoginAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoginAdapter/LoginAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LoginAdapter/LoginForQQAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoginAdapter/LoginForQQAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LoginAdapter/LoginForSinaAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoginAdapter/LoginForSinaAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LoginAdapter/LoginForTelAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoginAdapter/LoginForTelAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LoginAdapter/LoginForTokenAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoginAdapter/LoginForTokenAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LoginAdapter/LoginForWechatAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoginAdapter/LoginForWechatAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LoginAdapter/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoginAdapter/Member.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LoginAdapter/PassportForThirdAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoginAdapter/PassportForThirdAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LoginAdapter/ResultMsg.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoginAdapter/ResultMsg.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LoginAdapter/SiginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoginAdapter/SiginService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LoginAdapter/SigninForThirdService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoginAdapter/SigninForThirdService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LoginAdapter/Test1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoginAdapter/Test1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LoginAdapter/Test2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoginAdapter/Test2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NetworkCourse/BigDataCourse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/NetworkCourse/BigDataCourse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NetworkCourse/JavaCourse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/NetworkCourse/JavaCourse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NetworkCourse/NetworkCourse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/NetworkCourse/NetworkCourse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NetworkCourse/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/NetworkCourse/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Observe/Event.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Observe/Event.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Observe/EventLisenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Observe/EventLisenter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Observe/Observer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Observe/Observer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Observe/ObserverTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Observe/ObserverTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Observe/Subject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Observe/Subject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Observe/SubjectEventType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Observe/SubjectEventType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pay/AliPay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pay/AliPay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pay/JDPay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pay/JDPay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pay/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pay/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pay/PayState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pay/PayState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pay/PayStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pay/PayStrategy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pay/Payment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pay/Payment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pay/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pay/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pay/UnionPay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pay/UnionPay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pay/WechatPay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pay/WechatPay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Staticproxy/Father.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Staticproxy/Father.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Staticproxy/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Staticproxy/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Staticproxy/Son.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Staticproxy/Son.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Staticproxy/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Staticproxy/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/promotion/CashbackStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/promotion/CashbackStrategy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/promotion/CouponStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/promotion/CouponStrategy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/promotion/EmptyStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/promotion/EmptyStrategy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/promotion/GroupbuyStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/promotion/GroupbuyStrategy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/promotion/PromotionActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/promotion/PromotionActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/promotion/PromotionStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/promotion/PromotionStrategy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/promotion/PromotionStrategyFactory$PromotionKey.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/promotion/PromotionStrategyFactory$PromotionKey.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/promotion/PromotionStrategyFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/promotion/PromotionStrategyFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/promotion/Test1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/promotion/Test1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/promotion/Test2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/promotion/Test2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/promotion/Test3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/promotion/Test3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Map/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -438,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584602544325</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="静态代理">
+      <created>1587267328749</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1587267328749</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -459,10 +358,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="静态代理" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="633" y="113" key="CommitChangelistDialog2" timestamp="1584602542306">
+    <state x="633" y="113" key="CommitChangelistDialog2" timestamp="1587267321161">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="633" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584602542306" />
+    <state x="633" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587267321161" />
     <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1586086052404">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -491,10 +390,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1584589109173" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1584602546534">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1587267337455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584602546534" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587267337455" />
     <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1586085655454">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
