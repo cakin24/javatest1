@@ -1,9 +1,8 @@
 package ZipFile;
 
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang.StringUtils;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
 import java.io.InputStream;
 import java.io.*;
 import java.util.zip.ZipEntry;
@@ -19,8 +18,9 @@ import static org.apache.xmlbeans.impl.store.Public2.test;
  * Description: 将文件夹压缩成zip文件,该范例重点关注资源关闭的顺序
  * 在开启了资源后，就要按照打开的顺序，依次相反地关闭资源。
  */
+@Slf4j
 public class ZipFile {
-    private static Logger log = LogManager.getLogger(ZipFile.class);
+
 
     public static void main( String[] args ) {
         String filePath = "F:\\Javatest" + File.separator + "tempTest"; // 代表一个文件夹
