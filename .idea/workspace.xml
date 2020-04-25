@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bc6153e-427e-4b65-a0a4-491de75f6135" name="Default" comment="静态代理">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Javatest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Javatest.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GPer/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GPer/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/GPer/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GPer/Teacher.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/asymsg/CallBack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/asymsg/Local.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/asymsg/Remote.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -373,7 +370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587735735122</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="静态代理">
+      <created>1587780613101</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1587780613101</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -402,10 +406,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587780259801" />
-    <state x="633" y="113" key="CommitChangelistDialog2" timestamp="1587735733175">
+    <state x="633" y="113" key="CommitChangelistDialog2" timestamp="1587780610364">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="633" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587735733175" />
+    <state x="633" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587780610364" />
     <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1587729096495">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -438,10 +442,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1584589109173" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1587735737204">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1587780615468">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587735737204" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587780615468" />
     <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1587777749924">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
