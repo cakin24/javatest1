@@ -22,4 +22,8 @@ public class Constant {
      * 常量10
      */
     public static final int NUM10 = 10;
+    /**
+     * 表示1000毫秒
+     */
+    public static final int NUM1000 = 1000;
 }
