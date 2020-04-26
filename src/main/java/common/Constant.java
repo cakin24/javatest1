@@ -15,6 +15,18 @@ package common;
  */
 public class Constant {
     /**
+     * 常量2
+     */
+    public static final int NUM2 = 2;
+    /**
+     * 常量4
+     */
+    public static final int NUM4 = 4;
+    /**
+     * 常量5
+     */
+    public static final int NUM5 = 5;
+    /**
      * 常量6
      */
     public static final int NUM6 = 6;

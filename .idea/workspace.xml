@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bc6153e-427e-4b65-a0a4-491de75f6135" name="Default" comment="静态代理">
-      <change afterPath="$PROJECT_DIR$/src/main/java/asymsg/CallBack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/asymsg/Local.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/asymsg/Remote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javatest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Javatest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/Constant.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,43 +57,29 @@
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/DataBaseProxy" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Javatest\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="CGlib" />
+      <recent name="GPProxy" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\Javatest\src\main\resources" />
       <recent name="F:\Javatest\src\main\java\CollectionPart" />
       <recent name="F:\Javatest\src\main\java\Map" />
       <recent name="F:\Javatest\src\main\java\Collection" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="CGlib" />
-      <recent name="GPProxy" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\Javatest\src\main\resources" />
-    </key>
   </component>
-  <component name="RunManager" selected="Application.Local">
+  <component name="RunManager" selected="Application.ToolUtils">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
-    </configuration>
-    <configuration name="Java8Tester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Stream.Java8Tester" />
-      <module name="Javatest" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Stream.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="Local" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="asymsg.Local" />
@@ -129,6 +116,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="optionaldemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ToolUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="toolutils.ToolUtils" />
+      <module name="Javatest" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="toolutils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -182,19 +183,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Java8Tester" />
       <item itemvalue="Application.WithoutOptionalDemo" />
       <item itemvalue="Application.OptionalDemo" />
       <item itemvalue="Application.OptionalTest" />
       <item itemvalue="Application.Local" />
+      <item itemvalue="Application.ToolUtils" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ToolUtils" />
         <item itemvalue="Application.Local" />
         <item itemvalue="Application.OptionalTest" />
         <item itemvalue="Application.OptionalDemo" />
         <item itemvalue="Application.WithoutOptionalDemo" />
-        <item itemvalue="Application.Java8Tester" />
       </list>
     </recent_temporary>
   </component>
@@ -377,7 +378,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587780613101</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="静态代理">
+      <created>1587780644230</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1587780644230</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -406,62 +414,62 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587780259801" />
-    <state x="633" y="113" key="CommitChangelistDialog2" timestamp="1587780610364">
+    <state x="633" y="113" key="CommitChangelistDialog2" timestamp="1587780642703">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="633" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587780610364" />
+    <state x="633" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587780642703" />
     <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1587729096495">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587729096495" />
-    <state width="1877" height="200" key="GridCell.Tab.0.bottom" timestamp="1587780397537">
+    <state width="1877" height="200" key="GridCell.Tab.0.bottom" timestamp="1587907742309">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="200" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587780397537" />
-    <state width="1877" height="200" key="GridCell.Tab.0.center" timestamp="1587780397537">
+    <state width="1877" height="200" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587907742309" />
+    <state width="1877" height="200" key="GridCell.Tab.0.center" timestamp="1587907742309">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="200" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587780397537" />
-    <state width="1877" height="200" key="GridCell.Tab.0.left" timestamp="1587780397537">
+    <state width="1877" height="200" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587907742309" />
+    <state width="1877" height="200" key="GridCell.Tab.0.left" timestamp="1587907742309">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="200" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587780397537" />
-    <state width="1877" height="200" key="GridCell.Tab.0.right" timestamp="1587780397537">
+    <state width="1877" height="200" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587907742309" />
+    <state width="1877" height="200" key="GridCell.Tab.0.right" timestamp="1587907742309">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="200" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587780397537" />
+    <state width="1877" height="200" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587907742309" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1587728518136">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587728518136" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1587778292118">
+    <state x="461" y="162" width="998" height="815" key="SettingsEditor" timestamp="1587899309646">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587778292118" />
+    <state x="461" y="162" width="998" height="815" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587899309646" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1584589109173">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1584589109173" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1587780615468">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1587780645732">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587780615468" />
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1587777749924">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587780645732" />
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1587898473030">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587777749924" />
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587898473030" />
     <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587267872648">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587267872648" />
-    <state x="1191" y="542" key="extract.method.dialog" timestamp="1587734740863">
+    <state x="1191" y="542" key="extract.method.dialog" timestamp="1587906858313">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1191" y="542" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587734740863" />
-    <state x="636" y="253" width="647" height="534" key="find.popup" timestamp="1587286905977">
+    <state x="1191" y="542" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587906858313" />
+    <state x="636" y="253" width="647" height="534" key="find.popup" timestamp="1587905593849">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="636" y="253" width="647" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587286905977" />
+    <state x="636" y="253" width="647" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587905593849" />
     <state x="0" y="0" key="new project wizard" timestamp="1586086062592">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
