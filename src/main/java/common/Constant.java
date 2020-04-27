@@ -38,4 +38,6 @@ public class Constant {
      * 表示1000毫秒
      */
     public static final int NUM1000 = 1000;
+
+    public static final String SPLIT_LINE = "*************************************************************************";
 }
