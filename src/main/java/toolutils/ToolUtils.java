@@ -11,6 +11,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
+import org.apache.commons.io.IOUtils;
 import org.apache.commons.io.filefilter.DirectoryFileFilter;
 import org.apache.commons.io.filefilter.RegexFileFilter;
 import org.apache.commons.lang3.ArrayUtils;
@@ -19,6 +20,13 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 
 import java.io.IOException;
+import java.io.File;
+import java.io.OutputStream;
+import java.io.InputStream;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStreamReader;
 import java.nio.charset.Charset;
 import java.util.Arrays;
 
@@ -27,9 +35,9 @@ import static common.Constant.NUM4;
 import static common.Constant.NUM5;
 import static common.Constant.NUM6;
 
-import java.io.File;
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.List;
 
 
 /**
@@ -41,7 +49,6 @@ import java.util.Iterator;
 @Slf4j
 public class ToolUtils {
     public static void main( String[] args ) {
-
         log.info(SPLIT_LINE);
         testIOUtils();
         log.info(SPLIT_LINE);
@@ -61,8 +68,72 @@ public class ToolUtils {
         log.info(SPLIT_LINE);
     }
 
+    /**
+     * 功能描述：IOUtils测试
+     *
+     * @author cakin
+     * @date 2020/4/28
+     */
     private static void testIOUtils() {
+        String strSource = "D:/test/test/source.txt";
+        File file = new File(strSource);
 
+        String str = "D:/test/test/des.txt";
+        String str1 = "D:/test/test/des1.txt";
+        File saveFile = new File(str);
+        File saveFile1 = new File(str1);
+        OutputStream outputStream = null;
+        OutputStream outputStream1 = null;
+        InputStream inputStream = null;
+
+        try {
+            outputStream = new FileOutputStream(saveFile);
+            outputStream1 = new FileOutputStream(saveFile1);
+        } catch (FileNotFoundException e) {
+            log.info("catch FileNotFoundException");
+        }
+
+        try {
+            inputStream = new FileInputStream(file);
+            byte[] result = IOUtils.toByteArray(inputStream); // 以byte[]形式获取输入流中的内容，输入流读完后，再读内容为空
+            String resultString = new String(result, "UTF-8"); // 将byte数组转成字符
+            log.info((resultString));
+
+            /**
+             * inputStream只能读一次，如果读多次，会异常，这里有两种解决方法
+             * 1 屏蔽上面这段代码
+             * 2 inputStream重写赋值
+             * 这里采用方式2
+             */
+            inputStream = new FileInputStream(file); // inputStream 重新赋值
+            byte[] intArray = new byte[inputStream.available()]; // 获取输入流的大小
+            IOUtils.readFully(inputStream, intArray);
+            String resultString1 = new String(intArray, "UTF-8");
+            log.info(resultString1);
+
+        } catch (IOException e) {
+            log.info("catch IOException");
+        }
+
+        try {
+            InputStream inputStream2 = new FileInputStream(file);
+            IOUtils.copy(inputStream2, outputStream1); // 将字节从输入流赋值到输出流，拷贝完后，输入流清空
+            // 从输入流中复制内容到输出流，超过2G
+            IOUtils.copyLarge(inputStream2, outputStream1);
+            IOUtils.write("是追加而不是覆盖", outputStream1, "UTF-8"); // 将字节或字符写入字节流中
+            // 从输入流中一行一行读取，并安装指定的字符编码返回字符串列表
+            InputStream inputStream1 = new FileInputStream(file);
+            List<String> lines = IOUtils.readLines(new InputStreamReader(inputStream1, "utf-8"));
+            for (String line : lines
+            ) {
+                log.info(line);
+            }
+        } catch (IOException e) {
+            log.info("catch IOException");
+        } finally {
+            IOUtils.closeQuietly(inputStream);
+            IOUtils.closeQuietly(outputStream);
+        }
     }
 
     /**
@@ -77,7 +148,7 @@ public class ToolUtils {
         try {
             FileUtils.deleteDirectory(file); // 删除目录
         } catch (IOException e) {
-            e.printStackTrace();
+            log.info("catch IOException");
         }
 
         String strFile = "D:/test/test/test.txt";
