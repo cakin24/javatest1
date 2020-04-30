@@ -137,7 +137,7 @@ public class ToolUtils {
             IOUtils.copy(inputStream2, outputStream1); // 将字节从输入流赋值到输出流，拷贝完后，输入流清空
             // 从输入流中复制内容到输出流，超过2G
             IOUtils.copyLarge(inputStream2, outputStream1);
-            IOUtils.write("是追加而不是覆盖", outputStream1, "UTF-8"); // 将字节或字符写入字节流中
+            IOUtils.write("是追加而不是覆盖", outputStream1, "UTF-8"); // 将字符或者字节写入输出流中
             // 从输入流中一行一行读取，并安装指定的字符编码返回字符串列表
             InputStream inputStream1 = new FileInputStream(file);
             List<String> lines = IOUtils.readLines(new InputStreamReader(inputStream1, "utf-8"));
@@ -283,9 +283,8 @@ public class ToolUtils {
         // split()，把字符串拆分为数组，拆分符为空白字符。
         log.info("result is " + StringUtils.split(null));
         log.info("result is " + StringUtils.split(""));
-        log.info("result is " + StringUtils.split("王小二 沉默王三"));
-        log.info("result is " + StringUtils.split("王小二  沉默王三"));
-        log.info("result is " + StringUtils.split(" 王小二 "));
+        log.info("result is " + Arrays.toString(StringUtils.split("王小二 小四")));
+        log.info("result is " + Arrays.toString(StringUtils.split(" 王小二 ")));
 
         // replace()，替换另一个字符串中所有出现的字符串。
         log.info(StringUtils.replace(null, "*", "*"));
@@ -311,7 +310,7 @@ public class ToolUtils {
         log.info(FilenameUtils.getExtension("a/test.txt/c"));
         log.info(FilenameUtils.getExtension("a/b/c"));
 
-        // getBaseName()，获取单纯的文件名或者路径名，文件时去掉路径和扩展名；路径时去掉父级路径。
+        // getBaseName()，获取单纯的文件名或者路径名，文件时去掉路径和扩展名；是路径时去掉父级路径。
         log.info(FilenameUtils.getBaseName("a/b/test.txt"));
         log.info(FilenameUtils.getBaseName("test.txt"));
         log.info(FilenameUtils.getBaseName("a/b/c"));
