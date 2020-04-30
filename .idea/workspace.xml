@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0bc6153e-427e-4b65-a0a4-491de75f6135" name="Default" comment="静态代理">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/toolutils/ToolUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toolutils/ToolUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,8 +55,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/DataBaseProxy" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Java/customercheck.xml" />
+    <property name="settings.editor.selected.configurable" value="org.infernus.idea.checkstyle.CheckStyleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -397,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587994006216</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="静态代理">
+      <created>1588073024440</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1588073024440</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -426,54 +434,54 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587780259801" />
-    <state x="633" y="113" key="CommitChangelistDialog2" timestamp="1587994003346">
+    <state x="633" y="113" key="CommitChangelistDialog2" timestamp="1588073021395">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="633" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587994003346" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1587729096495">
+    <state x="633" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588073021395" />
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1588233095802">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587729096495" />
-    <state width="1877" height="200" key="GridCell.Tab.0.bottom" timestamp="1588073006794">
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588233095802" />
+    <state width="1877" height="200" key="GridCell.Tab.0.bottom" timestamp="1588233179004">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="200" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588073006794" />
-    <state width="1877" height="200" key="GridCell.Tab.0.center" timestamp="1588073006794">
+    <state width="1877" height="200" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588233179004" />
+    <state width="1877" height="200" key="GridCell.Tab.0.center" timestamp="1588233179004">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="200" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588073006794" />
-    <state width="1877" height="200" key="GridCell.Tab.0.left" timestamp="1588073006793">
+    <state width="1877" height="200" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588233179004" />
+    <state width="1877" height="200" key="GridCell.Tab.0.left" timestamp="1588233179004">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="200" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588073006793" />
-    <state width="1877" height="200" key="GridCell.Tab.0.right" timestamp="1588073006794">
+    <state width="1877" height="200" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588233179004" />
+    <state width="1877" height="200" key="GridCell.Tab.0.right" timestamp="1588233179004">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="200" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588073006794" />
+    <state width="1877" height="200" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588233179004" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1587728518136">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587728518136" />
-    <state x="461" y="162" width="998" height="815" key="SettingsEditor" timestamp="1587899309646">
+    <state x="461" y="162" width="998" height="815" key="SettingsEditor" timestamp="1588233102463">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="162" width="998" height="815" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587899309646" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1587992101964">
+    <state x="461" y="162" width="998" height="815" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588233102463" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1588232796047">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1587992101964" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1587994009454">
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1588232796047" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1588073027203">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587994009454" />
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1588072867200">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588073027203" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1588073129850">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588072867200" />
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1587986792275">
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588073129850" />
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1588232158044">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587986792275" />
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588232158044" />
     <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587992782276">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

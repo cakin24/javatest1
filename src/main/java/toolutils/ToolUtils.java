@@ -8,6 +8,7 @@
 package toolutils;
 
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
@@ -17,7 +18,6 @@ import org.apache.commons.io.filefilter.RegexFileFilter;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringEscapeUtils;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.beans.BeanUtils;
 
 import java.io.IOException;
 import java.io.File;
@@ -27,6 +27,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStreamReader;
+import java.lang.reflect.InvocationTargetException;
 import java.nio.charset.Charset;
 import java.util.Arrays;
 
@@ -50,21 +51,37 @@ import java.util.List;
 public class ToolUtils {
     public static void main( String[] args ) {
         log.info(SPLIT_LINE);
+        // IOUtils测试
         testIOUtils();
+
         log.info(SPLIT_LINE);
+        // FileUtils测试
         testFileUtils();
+
         log.info(SPLIT_LINE);
+        // 测试 FilenameUtils
         testStringUtils();
+
         log.info(SPLIT_LINE);
+        // 测试FilenameUtils
         testFilenameUtils();
+
+        // 测试ArrayUtils
         log.info(SPLIT_LINE);
         testArrayUtils();
+
         log.info(SPLIT_LINE);
+        // 测试DigestUtils
         testDigestUtils();
+
         log.info(SPLIT_LINE);
+        // StringEscapeUtils测试
         testStringEscapeUtils();
+
         log.info(SPLIT_LINE);
+        // 测试BeanUtils工具类
         testBeanUtils();
+
         log.info(SPLIT_LINE);
     }
 
@@ -460,13 +477,30 @@ public class ToolUtils {
      *
      * @author cakin
      * @date 2020/4/26
-     * @description: Spring框架自带
      */
     private static void testBeanUtils() {
         EUser user1 = new EUser(1, "cakin");
         EUser user2 = new EUser();
 
-        BeanUtils.copyProperties(user1, user2);
+        try {
+            BeanUtils.copyProperties(user2, user1);
+        } catch (IllegalAccessException e) {
+            log.info("catch IllegalAccessException");
+        } catch (InvocationTargetException e) {
+            log.info("catch InvocationTargetException");
+        }
         log.info("user2 is" + user2);
+
+        try {
+            BeanUtils.setProperty(user2, "username", "cakin24");
+            log.info("user2 is" + user2);
+            String fieldValue = BeanUtils.getProperty(user2, "username");
+        } catch (IllegalAccessException e) {
+            log.info("catch IllegalAccessException");
+        } catch (InvocationTargetException e) {
+            log.info("catch InvocationTargetException");
+        } catch (NoSuchMethodException e) {
+            log.info("catch NoSuchMethodException");
+        }
     }
 }
