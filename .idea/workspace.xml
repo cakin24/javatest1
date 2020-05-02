@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bc6153e-427e-4b65-a0a4-491de75f6135" name="Default" comment="静态代理">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/toolutils/ToolUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toolutils/ToolUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ExectorThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExectorThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExectorThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExectorThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +35,13 @@
     <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\.m2\repos" />
+        <option name="mavenHome" value="D:/Program/apache-maven-3.5.3" />
+        <option name="userSettingsFile" value="C:\Users\cakin\.m2\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
@@ -55,7 +66,10 @@
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/DataBaseProxy" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Java/customercheck.xml" />
-    <property name="settings.editor.selected.configurable" value="org.infernus.idea.checkstyle.CheckStyleConfigurable" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -72,7 +86,7 @@
       <recent name="F:\Javatest\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ToolUtils">
+  <component name="RunManager" selected="Application.GsonTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -189,8 +203,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ToolUtils" />
         <item itemvalue="Application.GsonTest" />
+        <item itemvalue="Application.ToolUtils" />
         <item itemvalue="Application.Local" />
         <item itemvalue="Application.OptionalTest" />
         <item itemvalue="Application.OptionalDemo" />
@@ -411,7 +425,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588233366039</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="静态代理">
+      <created>1588235514357</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1588235514357</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -440,54 +461,54 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587780259801" />
-    <state x="633" y="113" key="CommitChangelistDialog2" timestamp="1588233363096">
+    <state x="633" y="113" key="CommitChangelistDialog2" timestamp="1588235511860">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="633" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588233363096" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1588233095802">
+    <state x="633" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588235511860" />
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1588329344571">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588233095802" />
-    <state width="1877" height="193" key="GridCell.Tab.0.bottom" timestamp="1588235397338">
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588329344571" />
+    <state width="1877" height="347" key="GridCell.Tab.0.bottom" timestamp="1588337364773">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="193" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588235397338" />
-    <state width="1877" height="193" key="GridCell.Tab.0.center" timestamp="1588235397338">
+    <state width="1877" height="347" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588337364773" />
+    <state width="1877" height="347" key="GridCell.Tab.0.center" timestamp="1588337364773">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="193" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588235397338" />
-    <state width="1877" height="193" key="GridCell.Tab.0.left" timestamp="1588235397338">
+    <state width="1877" height="347" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588337364773" />
+    <state width="1877" height="347" key="GridCell.Tab.0.left" timestamp="1588337364773">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="193" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588235397338" />
-    <state width="1877" height="193" key="GridCell.Tab.0.right" timestamp="1588235397338">
+    <state width="1877" height="347" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588337364773" />
+    <state width="1877" height="347" key="GridCell.Tab.0.right" timestamp="1588337364773">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="193" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588235397338" />
+    <state width="1877" height="347" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588337364773" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1587728518136">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587728518136" />
-    <state x="461" y="162" width="998" height="815" key="SettingsEditor" timestamp="1588233102463">
+    <state x="346" y="225" width="998" height="815" key="SettingsEditor" timestamp="1588331621441">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="162" width="998" height="815" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588233102463" />
+    <state x="346" y="225" width="998" height="815" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588331621441" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1588232796047">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1588232796047" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1588233367777">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1588235515937">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588233367777" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588235515937" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1588073129850">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588073129850" />
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1588232158044">
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1588378517179">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588232158044" />
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588378517179" />
     <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587992782276">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -496,10 +517,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1191" y="542" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587906858313" />
-    <state x="636" y="253" width="647" height="534" key="find.popup" timestamp="1587992085054">
+    <state x="636" y="253" width="647" height="534" key="find.popup" timestamp="1588327540117">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="636" y="253" width="647" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587992085054" />
+    <state x="636" y="253" width="647" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588327540117" />
     <state x="0" y="0" key="new project wizard" timestamp="1586086062592">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -632,21 +653,5 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
