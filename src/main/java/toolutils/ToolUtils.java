@@ -482,8 +482,8 @@ public class ToolUtils {
      * @date 2020/4/26
      */
     private static void testBeanUtils() {
-        EUser user1 = new EUser(1, "cakin");
-        EUser user2 = new EUser();
+        User user1 = new User(1, "cakin");
+        User user2 = new User();
 
         try {
             BeanUtils.copyProperties(user2, user1);
