@@ -95,9 +95,9 @@ public class ToolUtils {
         String strSource = "D:/test/test/source.txt";
         File file = new File(strSource);
 
-        String str = "D:/test/test/des.txt";
+        String strFile = "D:/test/test/des.txt";
         String str1 = "D:/test/test/des1.txt";
-        File saveFile = new File(str);
+        File saveFile = new File(strFile);
         File saveFile1 = new File(str1);
         OutputStream outputStream = null;
         OutputStream outputStream1 = null;
@@ -106,8 +106,12 @@ public class ToolUtils {
         try {
             outputStream = new FileOutputStream(saveFile);
             outputStream1 = new FileOutputStream(saveFile1);
+            int a = 5/0;
         } catch (FileNotFoundException e) {
             log.info("catch FileNotFoundException");
+        } catch (ArithmeticException e){
+            log.info("catch ArithmeticException");
+
         }
 
         try {
