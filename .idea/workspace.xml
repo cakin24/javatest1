@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0bc6153e-427e-4b65-a0a4-491de75f6135" name="Default" comment="静态代理">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -445,7 +442,21 @@
       <option name="project" value="LOCAL" />
       <updated>1588498825665</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="静态代理">
+      <created>1588675707279</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1588675707279</updated>
+    </task>
+    <task id="LOCAL-00035" summary="静态代理">
+      <created>1588675903775</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1588675903775</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -482,10 +493,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="479" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588496989877" />
-    <state x="633" y="113" key="CommitChangelistDialog2" timestamp="1588675704302">
+    <state x="633" y="113" key="CommitChangelistDialog2" timestamp="1588675901742">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="633" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588675704302" />
+    <state x="633" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588675901742" />
     <state x="599" y="347" key="DetectedRootsChooserDialog" timestamp="1588412890390">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -534,18 +545,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587728518136" />
-    <state x="346" y="225" width="998" height="815" key="SettingsEditor" timestamp="1588675403737">
+    <state x="346" y="225" width="998" height="815" key="SettingsEditor" timestamp="1588676373925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="346" y="225" width="998" height="815" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588675403737" />
+    <state x="346" y="225" width="998" height="815" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588676373924" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1588409993365">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1588409993365" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1588675710682">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1588675905565">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588675710682" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588675905565" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1588073129850">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
