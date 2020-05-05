@@ -8,6 +8,8 @@
 import java.util.HashMap;
 import java.util.List;
 
+import static org.apache.xmlbeans.impl.store.Public2.test;
+
 /**
  * @className: Main
  * @description: TODO
@@ -30,6 +32,26 @@ public class Main {
         System.out.println("a2");
         System.out.println("a3");
         System.out.println("a4");
+        int a = 1;
+        if(a == 2)
+        {
+            throw new IndexOutOfBoundsException();
+        }
+        System.out.println("a5");
+        System.out.println("a6");
+        testdebug();
+    }
+
+    private static void testdebug() {
+        System.out.println("a1");
+        System.out.println("a2");
+        System.out.println("a3");
+        System.out.println("a4");
+        int a = 1;
+        if(a == 1)
+        {
+            throw new IndexOutOfBoundsException();
+        }
         System.out.println("a5");
         System.out.println("a6");
     }
