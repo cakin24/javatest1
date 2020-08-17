@@ -32,9 +32,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bc6153e-427e-4b65-a0a4-491de75f6135" name="Default" comment="BeanUtils.copyProperties拷贝结构不同类测试">
+    <list default="true" id="0bc6153e-427e-4b65-a0a4-491de75f6135" name="Default" comment="项目整理">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/invoice/InvoiceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/invoice/InvoiceService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,10 +79,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/DataBaseProxy" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/invoice" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MUIdemo" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -235,6 +238,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573892633535</updated>
+      <workItem from="1597656534494" duration="401000" />
     </task>
     <task id="LOCAL-00001" summary="静态代理">
       <created>1575205982724</created>
@@ -537,8 +541,25 @@
       <option name="project" value="LOCAL" />
       <updated>1594649752117</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="项目整理">
+      <created>1597656671489</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1597656671489</updated>
+    </task>
+    <task id="LOCAL-00045" summary="项目整理">
+      <created>1597656789898</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1597656789898</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -555,47 +576,27 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="静态代理" />
     <MESSAGE value="BeanUtils.copyProperties拷贝结构不同类测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="BeanUtils.copyProperties拷贝结构不同类测试" />
+    <MESSAGE value="项目整理" />
+    <option name="LAST_COMMIT_MESSAGE" value="项目整理" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="676" y="373" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1588498505320">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="676" y="373" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588498505320" />
     <state x="612" y="187" key="#com.intellij.ide.util.MemberChooser" timestamp="1594647489355">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="612" y="187" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1594647489355" />
-    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587780259801" />
-    <state x="689" y="303" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1588671520207">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="689" y="303" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588671520207" />
-    <state x="479" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588496989877">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="479" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588496989877" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594646225645">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1594646225645" />
-    <state x="1232" y="74" key="CommitChangelistDialog2" timestamp="1591261303013">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1232" y="74" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1591261303013" />
-    <state x="599" y="347" key="DetectedRootsChooserDialog" timestamp="1588412890390">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="599" y="347" key="DetectedRootsChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588412890390" />
-    <state x="592" y="207" key="FileChooserDialogImpl" timestamp="1592983962068">
+    <state x="282" y="0" key="CommitChangelistDialog2" timestamp="1597656789056">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="592" y="207" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1592983962068" />
-    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588413317778" />
-    <state x="823" y="410" width="273" height="291" key="Github.ShareDialog" timestamp="1588675792419">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="282" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1597656789056" />
+    <state x="1232" y="74" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1591261303013" />
+    <state x="592" y="207" key="FileChooserDialogImpl" timestamp="1597656898669">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="823" y="410" width="273" height="291" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588675792419" />
+    <state x="592" y="207" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1597656898669" />
     <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1594649831591">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -616,26 +617,6 @@
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594649831591" />
     <state width="1877" height="231" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589120779686" />
-    <state width="1877" height="175" key="GridCell.Tab.1.bottom" timestamp="1588681268872">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="175" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588681268872" />
-    <state width="1877" height="175" key="GridCell.Tab.1.center" timestamp="1588681268872">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="175" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588681268872" />
-    <state width="1877" height="175" key="GridCell.Tab.1.left" timestamp="1588681268872">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="175" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588681268872" />
-    <state width="1877" height="175" key="GridCell.Tab.1.right" timestamp="1588681268872">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="175" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588681268872" />
-    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1587728518136">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587728518136" />
     <state x="446" y="171" key="NewModule_or_Project.wizard" timestamp="1592983979140">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -644,20 +625,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="117" width="914" height="707" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1591261933399" />
-    <state x="346" y="225" width="998" height="815" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588676373924" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1588409993365">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1588409993365" />
-    <state x="722" y="93" key="Vcs.Push.Dialog.v2" timestamp="1594649756565">
+    <state x="722" y="93" key="Vcs.Push.Dialog.v2" timestamp="1597656793130">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="722" y="93" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1594649756565" />
+    <state x="722" y="93" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1597656793130" />
     <state x="1064" y="117" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1591261135053" />
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1588073129850">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588073129850" />
     <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1589065043539">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -666,23 +638,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="602" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1594647883037" />
-    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587992782276" />
-    <state x="498" y="256" width="923" height="605" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1588671528958">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="498" y="256" width="923" height="605" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040@0.0.1920.1040" timestamp="1588671528958" />
-    <state x="1191" y="542" key="extract.method.dialog" timestamp="1587906858313">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1191" y="542" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587906858313" />
     <state x="636" y="253" width="647" height="534" key="find.popup" timestamp="1589269593307">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="636" y="253" width="647" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589269593307" />
-    <state x="253" y="259" key="new project wizard" timestamp="1588414520667">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="568" y="312" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1597656707535">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="253" y="259" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1588414520667" />
+    <state x="568" y="312" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1536.824@0.0.1536.824" timestamp="1597656707535" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
