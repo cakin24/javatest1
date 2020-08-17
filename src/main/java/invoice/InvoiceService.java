@@ -12,4 +12,11 @@ import invoice.dto.CertificationResponseDto;
  */
 public interface InvoiceService {
     CertificationResponseDto certification(CertificationRequestDto dto);  // 认证接口
+    celuxuanz(cansh )
+    {
+        canshu instanceof
+        {
+
+        }
+    }
 }
