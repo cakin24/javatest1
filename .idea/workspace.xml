@@ -34,14 +34,19 @@
   <component name="ChangeListManager">
     <list default="true" id="0bc6153e-427e-4b65-a0a4-491de75f6135" name="Default" comment="项目整理">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/pattern/iterator/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/pattern/iterator/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/pattern/iterator/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/pattern/iterator/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/pattern/iterator/StudentAggregate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/pattern/iterator/StudentAggregate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/pattern/iterator/StudentAggregateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/pattern/iterator/StudentAggregateImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/pattern/iterator/StudentIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/pattern/iterator/StudentIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/pattern/iterator/StudentIteratorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/pattern/iterator/StudentIteratorImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/pattern/iterator/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/pattern/iterator/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/pattern/iterator/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/pattern/iterator/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/pattern/visitor/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/pattern/visitor/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/pattern/visitor/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/pattern/visitor/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/pattern/visitor/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/pattern/visitor/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/pattern/visitor/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/pattern/visitor/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/pattern/visitor/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/pattern/visitor/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/pattern/visitor/Owner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/pattern/visitor/Owner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/pattern/visitor/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/pattern/visitor/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/pattern/visitor/Someone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/pattern/visitor/Someone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/pattern/visitor/Cat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/pattern/visitor/Cat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/pattern/visitor/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/pattern/visitor/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/pattern/visitor/Dog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/pattern/visitor/Dog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/pattern/visitor/Owner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/pattern/visitor/Owner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/pattern/visitor/Someone.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/pattern/visitor/Someone.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +127,7 @@
       <recent name="F:\Javatest\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Client (3)">
+  <component name="RunManager" selected="Application.Client (1)">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -130,26 +135,12 @@
       <module />
     </configuration>
     <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.itheima.pattern.observer.jdk.Client" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.pattern.visitor.dispatch.doubleDispatch.Client" />
       <module name="Javatest" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.itheima.pattern.observer.jdk.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Client (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.itheima.pattern.mediator.Client" />
-      <module name="Javatest" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.itheima.pattern.mediator.*" />
+          <option name="PATTERN" value="com.itheima.pattern.visitor.dispatch.doubleDispatch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -171,13 +162,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.itheima.pattern.observer.Client" />
+    <configuration name="Client (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itheima.pattern.visitor.Client" />
       <module name="Javatest" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.itheima.pattern.observer.*" />
+          <option name="PATTERN" value="com.itheima.pattern.visitor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itheima.pattern.visitor.dispatch.dynamicDispatch.Client" />
+      <module name="Javatest" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.pattern.visitor.dispatch.dynamicDispatch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itheima.pattern.visitor.dispatch.staticDispatch.Client" />
+      <module name="Javatest" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.pattern.visitor.dispatch.staticDispatch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -187,20 +206,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="invoice.test" />
-      <module name="Javatest" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="invoice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -231,19 +236,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.test" />
+      <item itemvalue="Application.Client (3)" />
+      <item itemvalue="Application.Client (4)" />
+      <item itemvalue="Application.Client (5)" />
       <item itemvalue="Application.Client" />
       <item itemvalue="Application.Client (1)" />
-      <item itemvalue="Application.Client (2)" />
-      <item itemvalue="Application.Client (3)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Client (3)" />
-        <item itemvalue="Application.Client (2)" />
         <item itemvalue="Application.Client (1)" />
         <item itemvalue="Application.Client" />
-        <item itemvalue="Application.test" />
+        <item itemvalue="Application.Client (5)" />
+        <item itemvalue="Application.Client (4)" />
+        <item itemvalue="Application.Client (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -258,14 +263,7 @@
       <option name="presentableId" value="Default" />
       <updated>1573892633535</updated>
       <workItem from="1597656534494" duration="401000" />
-      <workItem from="1613786977947" duration="7363000" />
-    </task>
-    <task id="LOCAL-00001" summary="静态代理">
-      <created>1575205982724</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1575205982724</updated>
+      <workItem from="1613786977947" duration="10257000" />
     </task>
     <task id="LOCAL-00002" summary="静态代理">
       <created>1575291363682</created>
@@ -603,7 +601,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613790938426</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="项目整理">
+      <created>1613802274040</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1613802274041</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -628,39 +633,39 @@
     <option name="LAST_COMMIT_MESSAGE" value="项目整理" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="464" y="0" key="CommitChangelistDialog2" timestamp="1613790937377">
+    <state x="464" y="0" key="CommitChangelistDialog2" timestamp="1613802273020">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="464" y="0" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1613790937377" />
+    <state x="464" y="0" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1613802273020" />
     <state x="2500" y="106" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613787929041" />
-    <state width="1877" height="210" key="GridCell.Tab.0.bottom" timestamp="1613792268117">
+    <state width="1877" height="210" key="GridCell.Tab.0.bottom" timestamp="1613805188149">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1613790818298" />
-    <state width="1877" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613792268117" />
-    <state width="1877" height="210" key="GridCell.Tab.0.center" timestamp="1613792268117">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1613804898566" />
+    <state width="1877" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613805188149" />
+    <state width="1877" height="210" key="GridCell.Tab.0.center" timestamp="1613805188148">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1613790818298" />
-    <state width="1877" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613792268117" />
-    <state width="1877" height="210" key="GridCell.Tab.0.left" timestamp="1613792268117">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1613804898566" />
+    <state width="1877" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613805188148" />
+    <state width="1877" height="210" key="GridCell.Tab.0.left" timestamp="1613805188148">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1613790818298" />
-    <state width="1877" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613792268117" />
-    <state width="1877" height="210" key="GridCell.Tab.0.right" timestamp="1613792268117">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1613804898566" />
+    <state width="1877" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613805188148" />
+    <state width="1877" height="210" key="GridCell.Tab.0.right" timestamp="1613805188149">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1613790818298" />
-    <state width="1877" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613792268117" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1613804898566" />
+    <state width="1877" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613805188149" />
     <state x="270" y="57" key="SettingsEditor" timestamp="1613787220209">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="57" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1613787220209" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1613790940075">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1613802276004">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1613790940075" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1613802276004" />
     <state x="2582" y="254" width="596" height="584" key="find.popup" timestamp="1613787390047">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

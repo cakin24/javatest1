@@ -4,6 +4,7 @@ package com.itheima.pattern.visitor;
  * @version v1.0
  * @ClassName: Owner
  * @Description: 具体访问者角色类(自己)
+ * 给出对每一个元素类访问时所产生的具体行为。
  * @Author: cakin
  */
 public class Owner implements Person {

@@ -7,7 +7,6 @@ package com.itheima.pattern.visitor;
  * @Author: cakin
  */
 public interface Animal {
-
-    //接受访问者访问的功能
+    // 接受访问者访问的功能，其意义是指，每一个元素都要可以被访问者访问。
     void accept(Person person);
 }
