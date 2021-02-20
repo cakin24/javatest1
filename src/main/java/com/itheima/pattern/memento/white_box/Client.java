@@ -3,24 +3,24 @@ package com.itheima.pattern.memento.white_box;
 /**
  * @version v1.0
  * @ClassName: Client
- * @Description: TODO(一句话描述该类的功能)
+ * @Description: 测试类
  * @Author: cakin
  */
 public class Client {
     public static void main(String[] args) {
         System.out.println("---------------大战boos前-----------------");
-        //创建游戏角色对象
+        // 创建游戏角色对象
         GameRole gameRole = new GameRole();
-        gameRole.initState();//初始化状态操作
+        gameRole.initState(); // 初始化状态操作
         gameRole.stateDisplay();
 
-        //将该游戏角色内部状态进行备份
-        //创建管理者对象
+        // 将该游戏角色内部状态进行备份
+        // 创建管理者对象
         RoleStateCaretaker roleStateCaretaker = new RoleStateCaretaker();
         roleStateCaretaker.setRoleStateMemento(gameRole.saveState());
 
         System.out.println("---------------大战boos后-----------------");
-        //损耗严重
+        // 损耗严重
         gameRole.fight();
         gameRole.stateDisplay();
 
