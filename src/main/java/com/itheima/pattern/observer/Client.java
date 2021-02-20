@@ -17,6 +17,6 @@ public class Client {
         subject.attach(new WeiXinUser("沙悟净"));
 
         // 3 公众号更新，发出消息给订阅者（观察者对象）
-        subject.notify("微信的专栏更新了！");
+        subject.notify("公众号的专栏更新了！");
     }
 }
