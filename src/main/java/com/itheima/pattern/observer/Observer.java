@@ -7,6 +7,5 @@ package com.itheima.pattern.observer;
  * @Author: cakin
  */
 public interface Observer {
-
     void update(String message);
 }
