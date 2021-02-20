@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * @version v1.0
  * @ClassName: StudentAggregateImpl
- * @Description: TODO(一句话描述该类的功能)
+ * @Description: 具体聚合角色
  * @Author: cakin
  */
 public class StudentAggregateImpl implements StudentAggregate {
@@ -21,7 +21,7 @@ public class StudentAggregateImpl implements StudentAggregate {
         list.remove(stu);
     }
 
-    //获取迭代器对象
+    // 获取迭代器对象
     public StudentIterator getStudentIterator() {
         return new StudentIteratorImpl(list);
     }

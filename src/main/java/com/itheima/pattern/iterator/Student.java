@@ -3,11 +3,17 @@ package com.itheima.pattern.iterator;
 /**
  * @version v1.0
  * @ClassName: Student
- * @Description: TODO(一句话描述该类的功能)
+ * @Description: 学生类
  * @Author: cakin
  */
 public class Student {
+    /**
+     * 姓名
+     */
     private String name;
+    /**
+     * 学号
+     */
     private String number;
 
     @Override
