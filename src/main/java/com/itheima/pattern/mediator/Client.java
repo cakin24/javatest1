@@ -3,20 +3,20 @@ package com.itheima.pattern.mediator;
 /**
  * @version v1.0
  * @ClassName: Client
- * @Description: TODO(一句话描述该类的功能)
+ * @Description: 测试类
  * @Author: cakin
  */
 public class Client {
     public static void main(String[] args) {
-        //创建中介者对象
+        // 创建中介者对象
         MediatorStructure mediator = new MediatorStructure();
 
-        //创建租房者对象
+        // 创建租房者对象
         Tenant tenant = new Tenant("李四",mediator);
-        //创建房主对象
+        // 创建房主对象
         HouseOwner houseOwner = new HouseOwner("张三",mediator);
 
-        //中介者要知道具体的房主和租房者
+        // 中介者要知道具体的房主和租房者
         mediator.setTenant(tenant);
         mediator.setHouseOwner(houseOwner);
 

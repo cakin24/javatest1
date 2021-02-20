@@ -7,7 +7,6 @@ package com.itheima.pattern.mediator;
  * @Author: cakin
  */
 public abstract class Person {
-
     protected String name;
     protected Mediator mediator;
 

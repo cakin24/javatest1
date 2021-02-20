@@ -3,12 +3,11 @@ package com.itheima.pattern.mediator;
 /**
  * @version v1.0
  * @ClassName: MediatorStructure
- * @Description: 具体的中介者角色类
+ * @Description: 中介机构，具体的中介者角色类
  * @Author: cakin
  */
 public class MediatorStructure extends Mediator {
-
-    //聚合房主和租房者对象
+    // 首先中介结构必须知道所有房主和租房者的信息
     private HouseOwner houseOwner;
     private Tenant tenant;
 
