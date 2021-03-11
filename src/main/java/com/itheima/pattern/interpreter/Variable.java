@@ -8,7 +8,7 @@ package com.itheima.pattern.interpreter;
  */
 public class Variable extends AbstractExpression {
 
-    //声明存储变量名的成员变量
+    // 声明存储变量名的成员变量
     private String name;
 
     public Variable(String name) {
@@ -16,7 +16,7 @@ public class Variable extends AbstractExpression {
     }
 
     public int interpret(Context context) {
-        //直接返回变量的值
+        // 直接返回变量的值
         return context.getValue(this);
     }
 
