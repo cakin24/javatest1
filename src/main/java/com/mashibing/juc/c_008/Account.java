@@ -1,56 +1,53 @@
-/**
- * ÃæÊÔÌâ£ºÄ£ÄâÒøÐÐÕË»§
- * ¶ÔÒµÎñÐ´·½·¨¼ÓËø
- * ¶ÔÒµÎñ¶Á·½·¨²»¼ÓËø
- * ÕâÑùÐÐ²»ÐÐ£¿
- *
- * ÈÝÒ×²úÉúÔà¶ÁÎÊÌâ£¨dirtyRead£©
- */
 
+/**
+ * @className: Account
+ * @description: é¢è¯•é¢˜ï¼šæ¨¡æ‹Ÿé“¶è¡Œè´¦æˆ·
+ * å¯¹ä¸šåŠ¡å†™æ–¹æ³•åŠ é”
+ * å¯¹ä¸šåŠ¡è¯»æ–¹æ³•ä¸åŠ é”
+ * è¿™æ ·å®žçŽ°å®¹æ˜“äº§ç”Ÿè„è¯»é—®é¢˜
+ * @date: 2021/6/20
+ */
 package com.mashibing.juc.c_008;
 
 import java.util.concurrent.TimeUnit;
 
 public class Account {
-	String name;
-	double balance;
-	
-	public synchronized void set(String name, double balance) {
-		this.name = name;
+    String name;
+    double balance;
+    // å¯¹ä¸šåŠ¡å†™æ–¹æ³•åŠ é”
+    public synchronized void set(String name, double balance) {
+        this.name = name;
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+        this.balance = balance;
+    }
+    // å¯¹ä¸šåŠ¡è¯»æ–¹æ³•ä¸åŠ é”
+    public /*synchronized*/ double getBalance(String name) { // åªæœ‰åœ¨è¿™é‡ŒåŠ é”ï¼Œæ‰ä¸ä¼šäº§ç”Ÿè„è¯»é—®é¢˜
+        return this.balance;
+    }
 
-		
-		this.balance = balance;
-	}
-	
-	public /*synchronized*/ double getBalance(String name) {
-		return this.balance;
-	}
-	
-	
-	public static void main(String[] args) {
-		Account a = new Account();
-		new Thread(()->a.set("zhangsan", 100.0)).start();
-		
-		try {
-			TimeUnit.SECONDS.sleep(1);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		
-		System.out.println(a.getBalance("zhangsan"));
-		
-		try {
-			TimeUnit.SECONDS.sleep(2);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		
-		System.out.println(a.getBalance("zhangsan"));
-	}
+    public static void main(String[] args) {
+        Account a = new Account();
+        new Thread(() -> a.set("zhangsan", 100.0)).start();
+
+        try {
+            TimeUnit.SECONDS.sleep(1);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println(a.getBalance("zhangsan"));
+
+        try {
+            TimeUnit.SECONDS.sleep(2);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println(a.getBalance("zhangsan"));
+    }
 }

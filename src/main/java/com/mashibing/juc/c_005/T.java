@@ -1,24 +1,17 @@
-/**
- * ·ÖÎöÒ»ÏÂÕâ¸ö³ÌĞòµÄÊä³ö
- * @author mashibing
- */
-
 package com.mashibing.juc.c_005;
 
 public class T implements Runnable {
+    private /*volatile*/ int count = 100;
 
-	private /*volatile*/ int count = 100;
-	
-	public /*synchronized*/ void run() { 
-		count--;
-		System.out.println(Thread.currentThread().getName() + " count = " + count);
-	}
-	
-	public static void main(String[] args) {
-		T t = new T();
-		for(int i=0; i<100; i++) {
-			new Thread(t, "THREAD" + i).start();
-		}
-	}
-	
+    public synchronized void run() { // å¿…é¡»åŠ  synchronized ï¼Œå¦åˆ™ä¸¤ä¸ªä¸åŒçš„çº¿ç¨‹å¯èƒ½ä¼šè¾“å‡ºç›¸åŒçš„å€¼
+        count--;
+        System.out.println(Thread.currentThread().getName() + " count = " + count);
+    }
+
+    public static void main(String[] args) {
+        T t = new T();
+        for (int i = 0; i < 100; i++) {
+            new Thread(t, "THREAD" + i).start();
+        }
+    }
 }

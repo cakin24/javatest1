@@ -1,42 +1,42 @@
-/**
- * Í¬²½ºÍ·ÇÍ¬²½·½·¨ÊÇ·ñ¿ÉÒÔÍ¬Ê±µ÷ÓÃ£¿
- * @author mashibing
- */
-
 package com.mashibing.juc.c_007;
 
+// åŒæ­¥æ–¹æ³•å’ŒéåŒæ­¥æ–¹æ³•å¯ä»¥åŒæ—¶è°ƒç”¨
 public class T {
+    // åŒæ­¥æ–¹æ³•
+    public synchronized void m1() {
+        System.out.println(Thread.currentThread().getName() + " m1 start...");
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println(Thread.currentThread().getName() + " m1 end");
+    }
 
-	public synchronized void m1() { 
-		System.out.println(Thread.currentThread().getName() + " m1 start...");
-		try {
-			Thread.sleep(10000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		System.out.println(Thread.currentThread().getName() + " m1 end");
-	}
-	
-	public void m2() {
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		System.out.println(Thread.currentThread().getName() + " m2 ");
-	}
-	
-	public static void main(String[] args) {
-		T t = new T();
-		
-		/*new Thread(()->t.m1(), "t1").start();
-		new Thread(()->t.m2(), "t2").start();*/
-		
-		new Thread(t::m1, "t1").start();
-		new Thread(t::m2, "t2").start();
+    // éåŒæ­¥æ–¹æ³•
+    public void m2() {
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println(Thread.currentThread().getName() + " m2 ");
+    }
+
+    public static void main(String[] args) {
+        T t = new T();
+
+        new Thread(t::m1, "t1").start();
+        new Thread(t::m2, "t2").start();
+
+        /*
+		lambda è¡¨è¾¾å¼å†™æ³•
+		new Thread(()->t.m1(), "t1").start();
+		new Thread(()->t.m2(), "t2").start();
+		*/
 		
 		/*
-		//1.8Ö®Ç°µÄĞ´·¨
+		//1.8 ä¹‹å‰çš„å†™æ³•
 		new Thread(new Runnable() {
 
 			@Override
@@ -46,7 +46,5 @@ public class T {
 			
 		});
 		*/
-		
-	}
-	
+    }
 }

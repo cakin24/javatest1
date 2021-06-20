@@ -1,24 +1,18 @@
-/**
- * synchronized¹Ø¼ü×Ö
- * ¶ÔÄ³¸ö¶ÔÏó¼ÓËø
- * @author mashibing
- */
+
 
 package com.mashibing.juc.c_004;
 
 public class T {
+    private static int count = 10;
 
-	private static int count = 10;
-	
-	public synchronized static void m() { //ÕâÀïµÈÍ¬ÓÚsynchronized(FineCoarseLock.class)
-		count--;
-		System.out.println(Thread.currentThread().getName() + " count = " + count);
-	}
-	
-	public static void mm() {
-		synchronized(T.class) { //¿¼ÂÇÒ»ÏÂÕâÀïĞ´synchronized(this)ÊÇ·ñ¿ÉÒÔ£¿
-			count --;
-		}
-	}
+    public synchronized static void m() { // è¿™é‡Œç­‰åŒäº synchronized(T.class)
+        count--;
+        System.out.println(Thread.currentThread().getName() + " count = " + count);
+    }
 
+    public static void mm() {
+        synchronized (T.class) { // è¿™é‡Œä¸èƒ½å†™æˆ synchronized(this)
+            count--;
+        }
+    }
 }
