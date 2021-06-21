@@ -1,47 +1,43 @@
 /**
- * volatile ¹Ø¼ü×Ö£¬Ê¹Ò»¸ö±äÁ¿ÔÚ¶à¸öÏß³Ì¼ä¿É¼û
- * A BÏß³Ì¶¼ÓÃµ½Ò»¸ö±äÁ¿£¬javaÄ¬ÈÏÊÇAÏß³ÌÖĞ±£ÁôÒ»·İcopy£¬ÕâÑùÈç¹ûBÏß³ÌĞŞ¸ÄÁË¸Ã±äÁ¿£¬ÔòAÏß³ÌÎ´±ØÖªµÀ
- * Ê¹ÓÃvolatile¹Ø¼ü×Ö£¬»áÈÃËùÓĞÏß³Ì¶¼»á¶Áµ½±äÁ¿µÄĞŞ¸ÄÖµ
- * 
- * ÔÚÏÂÃæµÄ´úÂëÖĞ£¬runningÊÇ´æÔÚÓÚ¶ÑÄÚ´æµÄt¶ÔÏóÖĞ
- * µ±Ïß³Ìt1¿ªÊ¼ÔËĞĞµÄÊ±ºò£¬»á°ÑrunningÖµ´ÓÄÚ´æÖĞ¶Áµ½t1Ïß³ÌµÄ¹¤×÷Çø£¬ÔÚÔËĞĞ¹ı³ÌÖĞÖ±½ÓÊ¹ÓÃÕâ¸öcopy£¬²¢²»»áÃ¿´Î¶¼È¥
- * ¶ÁÈ¡¶ÑÄÚ´æ£¬ÕâÑù£¬µ±Ö÷Ïß³ÌĞŞ¸ÄrunningµÄÖµÖ®ºó£¬t1Ïß³Ì¸ĞÖª²»µ½£¬ËùÒÔ²»»áÍ£Ö¹ÔËĞĞ
- * 
- * Ê¹ÓÃvolatile£¬½«»áÇ¿ÖÆËùÓĞÏß³Ì¶¼È¥¶ÑÄÚ´æÖĞ¶ÁÈ¡runningµÄÖµ
- * 
- * ¿ÉÒÔÔÄ¶ÁÕâÆªÎÄÕÂ½øĞĞ¸üÉîÈëµÄÀí½â
+ * volatile å…³é”®å­—ï¼Œä½¿ä¸€ä¸ªå˜é‡åœ¨å¤šä¸ªçº¿ç¨‹é—´å¯è§
+ * A Bçº¿ç¨‹éƒ½ç”¨åˆ°ä¸€ä¸ªå˜é‡ï¼Œjava é»˜è®¤æ˜¯ A çº¿ç¨‹ä¸­ä¿ç•™ä¸€ä»½ copyï¼Œè¿™æ ·å¦‚æœ B çº¿ç¨‹ä¿®æ”¹äº†è¯¥å˜é‡ï¼Œåˆ™ A çº¿ç¨‹æœªå¿…çŸ¥é“
+ * ä½¿ç”¨ volatile å…³é”®å­—ï¼Œä¼šè®©æ‰€æœ‰çº¿ç¨‹éƒ½ä¼šè¯»åˆ°å˜é‡çš„ä¿®æ”¹å€¼
+ * <p>
+ * åœ¨ä¸‹é¢çš„ä»£ç ä¸­ï¼Œrunning æ˜¯å­˜åœ¨äºå †å†…å­˜çš„ t å¯¹è±¡ä¸­
+ * å½“çº¿ç¨‹ t1 å¼€å§‹è¿è¡Œçš„æ—¶å€™ï¼Œä¼šæŠŠ running å€¼ä»å †å†…å­˜ä¸­è¯»åˆ° t1 çº¿ç¨‹çš„å·¥ä½œåŒºï¼Œåœ¨è¿è¡Œè¿‡ç¨‹ä¸­ç›´æ¥ä½¿ç”¨è¿™ä¸ª copyï¼Œå¹¶ä¸ä¼šæ¯æ¬¡éƒ½å»
+ * è¯»å–å †å†…å­˜ï¼Œè¿™æ ·ï¼Œå½“ä¸»çº¿ç¨‹ä¿®æ”¹ running çš„å€¼ä¹‹åï¼Œt1 çº¿ç¨‹æ„ŸçŸ¥ä¸åˆ°ï¼Œæ‰€ä»¥ä¸ä¼šåœæ­¢è¿è¡Œ
+ * <p>
+ * ä½¿ç”¨ volatile ï¼Œå°†ä¼šå¼ºåˆ¶æ‰€æœ‰çº¿ç¨‹éƒ½å»å †å†…å­˜ä¸­è¯»å– running çš„å€¼
+ * <p>
+ * å¯ä»¥é˜…è¯»è¿™ç¯‡æ–‡ç« è¿›è¡Œæ›´æ·±å…¥çš„ç†è§£
  * http://www.cnblogs.com/nexiyi/p/java_memory_model_and_thread.html
- * 
- * volatile²¢²»ÄÜ±£Ö¤¶à¸öÏß³Ì¹²Í¬ĞŞ¸Ärunning±äÁ¿Ê±Ëù´øÀ´µÄ²»Ò»ÖÂÎÊÌâ£¬Ò²¾ÍÊÇËµvolatile²»ÄÜÌæ´úsynchronized
- * @author mashibing
+ * <p>
+ * volatile å¹¶ä¸èƒ½ä¿è¯å¤šä¸ªçº¿ç¨‹å…±åŒä¿®æ”¹ running å˜é‡æ—¶æ‰€å¸¦æ¥çš„ä¸ä¸€è‡´é—®é¢˜ï¼Œä¹Ÿå°±æ˜¯è¯´ volatile ä¸èƒ½æ›¿ä»£ synchronized
  */
 package com.mashibing.juc.c_012_Volatile;
 
 import java.util.concurrent.TimeUnit;
 
 public class T01_HelloVolatile {
-	/*volatile*/ boolean running = true; //¶Ô±ÈÒ»ÏÂÓĞÎŞvolatileµÄÇé¿öÏÂ£¬Õû¸ö³ÌĞòÔËĞĞ½á¹ûµÄÇø±ğ
-	void m() {
-		System.out.println("m start");
-		while(running) {
-		}
-		System.out.println("m end!");
-	}
-	
-	public static void main(String[] args) {
-		T01_HelloVolatile t = new T01_HelloVolatile();
-		
-		new Thread(t::m, "t1").start();
+    volatile boolean running = true; // å¯¹æ¯”ä¸€ä¸‹æœ‰æ—  volatile çš„æƒ…å†µä¸‹ï¼Œæ•´ä¸ªç¨‹åºè¿è¡Œç»“æœçš„åŒºåˆ«
 
-		try {
-			TimeUnit.SECONDS.sleep(1);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		
-		t.running = false;
-	}
-	
+    void m() {
+        System.out.println("m start");
+        while (running) {
+        }
+        System.out.println("m end!");
+    }
+
+    public static void main(String[] args) {
+        T01_HelloVolatile t = new T01_HelloVolatile();
+        new Thread(t::m, "t1").start();
+        try {
+            TimeUnit.SECONDS.sleep(1);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        t.running = false;
+    }
 }
 
 
