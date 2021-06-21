@@ -1,8 +1,7 @@
 /**
- * Ëø¶¨Ä³¶ÔÏóo£¬Èç¹ûoµÄÊôĞÔ·¢Éú¸Ä±ä£¬²»Ó°ÏìËøµÄÊ¹ÓÃ
- * µ«ÊÇÈç¹ûo±ä³ÉÁíÍâÒ»¸ö¶ÔÏó£¬ÔòËø¶¨µÄ¶ÔÏó·¢Éú¸Ä±ä
- * Ó¦¸Ã±ÜÃâ½«Ëø¶¨¶ÔÏóµÄÒıÓÃ±ä³ÉÁíÍâµÄ¶ÔÏó
- * @author mashibing
+ * é”å®šæŸå¯¹è±¡ oï¼Œå¦‚æœ o çš„å±æ€§å‘ç”Ÿæ”¹å˜ï¼Œä¸å½±å“é”çš„ä½¿ç”¨
+ * ä½†æ˜¯å¦‚æœ o å˜æˆå¦å¤–ä¸€ä¸ªå¯¹è±¡ï¼Œåˆ™é”å®šçš„å¯¹è±¡å‘ç”Ÿæ”¹å˜
+ * åº”è¯¥é¿å…å°†é”å®šå¯¹è±¡çš„å¼•ç”¨å˜æˆå¦å¤–çš„å¯¹è±¡
  */
 package com.mashibing.juc.c_017_MoreAboutSync;
 
@@ -10,43 +9,35 @@ import java.util.concurrent.TimeUnit;
 
 
 public class SyncSameObject {
-	
-	/*final*/ Object o = new Object();
 
-	void m() {
-		synchronized(o) {
-			while(true) {
-				try {
-					TimeUnit.SECONDS.sleep(1);
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
-				System.out.println(Thread.currentThread().getName());
-				
-				
-			}
-		}
-	}
-	
-	public static void main(String[] args) {
-		SyncSameObject t = new SyncSameObject();
-		//Æô¶¯µÚÒ»¸öÏß³Ì
-		new Thread(t::m, "t1").start();
-		
-		try {
-			TimeUnit.SECONDS.sleep(3);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		//´´½¨µÚ¶ş¸öÏß³Ì
-		Thread t2 = new Thread(t::m, "t2");
-		
-		t.o = new Object(); //Ëø¶ÔÏó·¢Éú¸Ä±ä£¬ËùÒÔt2Ïß³ÌµÃÒÔÖ´ĞĞ£¬Èç¹û×¢ÊÍµôÕâ¾ä»°£¬Ïß³Ì2½«ÓÀÔ¶µÃ²»µ½Ö´ĞĞ»ú»á
-		
-		t2.start();
-		
-	}
+    /*final*/ Object o = new Object(); // è¿™é‡Œåº”è¯¥åŠ ä¸Š finalï¼Œä¿è¯è¯¥å¯¹è±¡ä¸è¢«æ”¹å†™
 
-	
+    void m() {
+        synchronized (o) {
+            while (true) {
+                try {
+                    TimeUnit.SECONDS.sleep(1);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                System.out.println(Thread.currentThread().getName());
+            }
+        }
+    }
 
+    public static void main(String[] args) {
+        SyncSameObject t = new SyncSameObject();
+        // å¯åŠ¨ç¬¬ä¸€ä¸ªçº¿ç¨‹
+        new Thread(t::m, "t1").start();
+
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        // åˆ›å»ºç¬¬äºŒä¸ªçº¿ç¨‹
+        Thread t2 = new Thread(t::m, "t2");
+        t.o = new Object(); // é”å¯¹è±¡å‘ç”Ÿæ”¹å˜ï¼Œæ‰€ä»¥ t2 çº¿ç¨‹å¾—ä»¥æ‰§è¡Œï¼Œå¦‚æœæ³¨é‡Šæ‰è¿™å¥è¯ï¼Œçº¿ç¨‹2å°†æ°¸è¿œå¾—ä¸åˆ°æ‰§è¡Œæœºä¼š
+        t2.start();
+    }
 }
