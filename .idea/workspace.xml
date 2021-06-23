@@ -34,9 +34,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0bc6153e-427e-4b65-a0a4-491de75f6135" name="Default" comment="项目整理">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_018_00_AtomicXXX/T01_AtomicInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_018_00_AtomicXXX/T01_AtomicInteger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_018_00_AtomicXXX/T02_AtomicVsSyncVsLongAdder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_018_00_AtomicXXX/T02_AtomicVsSyncVsLongAdder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_018_01_Unsafe/HelloUnsafe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_018_01_Unsafe/HelloUnsafe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020/T01_ReentrantLock1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020/T01_ReentrantLock1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020/T02_ReentrantLock2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020/T02_ReentrantLock2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +124,7 @@
       <recent name="F:\Javatest\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.T02_AtomicVsSyncVsLongAdder">
+  <component name="RunManager" selected="Application.T02_ReentrantLock2">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -139,20 +138,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.mashibing.juc.c_018_01_Unsafe.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SyncSameObject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mashibing.juc.c_017_MoreAboutSync.SyncSameObject" />
-      <module name="Javatest" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mashibing.juc.c_017_MoreAboutSync.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -174,6 +159,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="T01_ReentrantLock1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mashibing.juc.c_020.T01_ReentrantLock1" />
+      <module name="Javatest" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mashibing.juc.c_020.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="T02_AtomicVsSyncVsLongAdder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mashibing.juc.c_018_00_AtomicXXX.T02_AtomicVsSyncVsLongAdder" />
       <module name="Javatest" />
@@ -188,13 +187,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T05_VolatileVsSync" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mashibing.juc.c_012_Volatile.T05_VolatileVsSync" />
+    <configuration name="T02_ReentrantLock2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mashibing.juc.c_020.T02_ReentrantLock2" />
       <module name="Javatest" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mashibing.juc.c_012_Volatile.*" />
+          <option name="PATTERN" value="com.mashibing.juc.c_020.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -234,19 +233,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.T05_VolatileVsSync" />
-      <item itemvalue="Application.SyncSameObject" />
       <item itemvalue="Application.T01_AtomicInteger" />
       <item itemvalue="Application.HelloUnsafe" />
       <item itemvalue="Application.T02_AtomicVsSyncVsLongAdder" />
+      <item itemvalue="Application.T01_ReentrantLock1" />
+      <item itemvalue="Application.T02_ReentrantLock2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.T02_ReentrantLock2" />
+        <item itemvalue="Application.T01_ReentrantLock1" />
         <item itemvalue="Application.T02_AtomicVsSyncVsLongAdder" />
         <item itemvalue="Application.HelloUnsafe" />
         <item itemvalue="Application.T01_AtomicInteger" />
-        <item itemvalue="Application.SyncSameObject" />
-        <item itemvalue="Application.T05_VolatileVsSync" />
       </list>
     </recent_temporary>
   </component>
@@ -285,14 +284,7 @@
       <workItem from="1624278222411" duration="1499000" />
       <workItem from="1624322184151" duration="708000" />
       <workItem from="1624357124420" duration="2835000" />
-      <workItem from="1624441202138" duration="1900000" />
-    </task>
-    <task id="LOCAL-00015" summary="静态代理">
-      <created>1584520272522</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1584520272522</updated>
+      <workItem from="1624441202138" duration="4477000" />
     </task>
     <task id="LOCAL-00016" summary="静态代理">
       <created>1584530290593</created>
@@ -630,7 +622,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624279718520</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="项目整理">
+      <created>1624443512474</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1624443512475</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -664,69 +663,73 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2353" y="53" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1623840318451" />
-    <state x="580" y="106" key="CommitChangelistDialog2" timestamp="1624279716596">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2500" y="106" key="CommitChangelistDialog2" timestamp="1624443510812">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="580" y="106" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624273648509" />
-    <state x="2500" y="106" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624010312800" />
+    <state x="2500" y="106" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624443510812" />
     <state x="580" y="106" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1624279716596" />
+    <state width="404" height="466" key="DebuggerActiveHint" timestamp="1624445451410">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="404" height="466" key="DebuggerActiveHint/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624445451410" />
     <state x="1160" y="540" key="FileChooserDialogImpl" timestamp="1623575124298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1160" y="540" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1623575124298" />
-    <state width="1877" height="309" key="GridCell.Tab.0.bottom" timestamp="1624442200907">
+    <state width="1877" height="243" key="GridCell.Tab.0.bottom" timestamp="1624446107983">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="165" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624273816808" />
-    <state width="1877" height="309" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624442200907" />
+    <state width="1877" height="243" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624446107983" />
     <state width="1877" height="309" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1624279736269" />
-    <state width="1877" height="309" key="GridCell.Tab.0.center" timestamp="1624442200907">
+    <state width="1877" height="243" key="GridCell.Tab.0.center" timestamp="1624446107982">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="165" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624273816808" />
-    <state width="1877" height="309" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624442200907" />
+    <state width="1877" height="243" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624446107982" />
     <state width="1877" height="309" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1624279736269" />
-    <state width="1877" height="309" key="GridCell.Tab.0.left" timestamp="1624442200906">
+    <state width="1877" height="243" key="GridCell.Tab.0.left" timestamp="1624446107981">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="165" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624273816807" />
-    <state width="1877" height="309" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624442200906" />
+    <state width="1877" height="243" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624446107981" />
     <state width="1877" height="309" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1624279736269" />
-    <state width="1877" height="309" key="GridCell.Tab.0.right" timestamp="1624442200907">
+    <state width="1877" height="243" key="GridCell.Tab.0.right" timestamp="1624446107982">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="165" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624273816808" />
-    <state width="1877" height="309" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624442200907" />
+    <state width="1877" height="243" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624446107982" />
     <state width="1877" height="309" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1624279736269" />
-    <state width="1877" height="243" key="GridCell.Tab.1.bottom" timestamp="1624360552253">
+    <state width="1877" height="243" key="GridCell.Tab.1.bottom" timestamp="1624446107984">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="243" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624360552253" />
+    <state width="1877" height="243" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624446107984" />
     <state width="1877" height="243" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1624021791402" />
-    <state width="1877" height="243" key="GridCell.Tab.1.center" timestamp="1624360552253">
+    <state width="1877" height="243" key="GridCell.Tab.1.center" timestamp="1624446107983">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="243" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624360552253" />
+    <state width="1877" height="243" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624446107983" />
     <state width="1877" height="243" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1624021791402" />
-    <state width="1877" height="243" key="GridCell.Tab.1.left" timestamp="1624360552253">
+    <state width="1877" height="243" key="GridCell.Tab.1.left" timestamp="1624446107983">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="243" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624360552253" />
+    <state width="1877" height="243" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624446107983" />
     <state width="1877" height="243" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1624021791402" />
-    <state width="1877" height="243" key="GridCell.Tab.1.right" timestamp="1624360552253">
+    <state width="1877" height="243" key="GridCell.Tab.1.right" timestamp="1624446107984">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="243" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624360552253" />
+    <state width="1877" height="243" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624446107984" />
     <state width="1877" height="243" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1624021791402" />
     <state x="314" y="196" key="SettingsEditor" timestamp="1623577173672">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="314" y="196" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1623577173672" />
-    <state x="451" y="183" key="Vcs.Push.Dialog.v2" timestamp="1624279720427">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2371" y="183" key="Vcs.Push.Dialog.v2" timestamp="1624443514672">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624236732601" />
-    <state x="2371" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624010295293" />
+    <state x="2371" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624443514672" />
     <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1624279720427" />
     <state x="753" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1624279121982">
       <screen x="0" y="0" width="1920" height="1040" />

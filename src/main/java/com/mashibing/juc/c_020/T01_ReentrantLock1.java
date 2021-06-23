@@ -1,7 +1,7 @@
 /**
- * reentrantlockÓÃÓÚÌæ´úsynchronized
- * ±¾ÀıÖĞÓÉÓÚm1Ëø¶¨this,Ö»ÓĞm1Ö´ĞĞÍê±ÏµÄÊ±ºò,m2²ÅÄÜÖ´ĞĞ
- * ÕâÀïÊÇ¸´Ï°synchronized×îÔ­Ê¼µÄÓïÒå
+ * reentrantlock ç”¨äºæ›¿ä»£ synchronized
+ * æœ¬ä¾‹ä¸­ç”±äº m1 é”å®š this,åªæœ‰ m1 æ‰§è¡Œå®Œæ¯•çš„æ—¶å€™,m2 æ‰èƒ½æ‰§è¡Œ
+ *
  * @author mashibing
  */
 package com.mashibing.juc.c_020;
@@ -9,31 +9,35 @@ package com.mashibing.juc.c_020;
 import java.util.concurrent.TimeUnit;
 
 public class T01_ReentrantLock1 {
-	synchronized void m1() {
-		for(int i=0; i<10; i++) {
-			try {
-				TimeUnit.SECONDS.sleep(1);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-			System.out.println(i);
-			if(i == 2) m2();
-		}
-		
-	}
-	
-	synchronized void m2() {
-		System.out.println("m2 ...");
-	}
-	
-	public static void main(String[] args) {
-		T01_ReentrantLock1 rl = new T01_ReentrantLock1();
-		new Thread(rl::m1).start();
-		try {
-			TimeUnit.SECONDS.sleep(1);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		//new Thread(rl::m2).start();
-	}
+    // m1 é”çš„æ˜¯ this å¯¹è±¡
+    synchronized void m1() {
+        System.out.println(this);
+        for (int i = 0; i < 10; i++) {
+            try {
+                TimeUnit.SECONDS.sleep(1);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println(i);
+            // é’ˆå¯¹åŒä¸€çº¿ç¨‹ï¼Œm2 å¯é‡å…¥
+            if (i == 2) m2();
+        }
+    }
+
+    // m2 é”çš„ä¹Ÿæ˜¯ this å¯¹è±¡
+    synchronized void m2() {
+        System.out.println(this);
+        System.out.println("m2 ...");
+    }
+
+    public static void main(String[] args) {
+        T01_ReentrantLock1 rl = new T01_ReentrantLock1();
+        new Thread(rl::m1).start();
+        try {
+            TimeUnit.SECONDS.sleep(1);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        // new Thread(rl::m2).start(); // å¦‚æœæ˜¯ä¸¤ä¸ªçº¿ç¨‹ï¼Œå¯¹ this åŒä¸€æŠŠé”æ˜¯æœ‰äº‰ç”¨çš„ï¼Œä¸å¯é‡å…¥ã€‚
+    }
 }

@@ -1,12 +1,7 @@
 /**
- * reentrantlockÓÃÓÚÌæ´úsynchronized
- * ÓÉÓÚm1Ëø¶¨this,Ö»ÓĞm1Ö´ĞĞÍê±ÏµÄÊ±ºò,m2²ÅÄÜÖ´ĞĞ
- * ÕâÀïÊÇ¸´Ï°synchronized×îÔ­Ê¼µÄÓïÒå
- * 
- * Ê¹ÓÃreentrantlock¿ÉÒÔÍê³ÉÍ¬ÑùµÄ¹¦ÄÜ
- * ĞèÒª×¢ÒâµÄÊÇ£¬±ØĞëÒª±ØĞëÒª±ØĞëÒªÊÖ¶¯ÊÍ·ÅËø£¨ÖØÒªµÄÊÂÇéËµÈı±é£©
- * Ê¹ÓÃsynËø¶¨µÄ»°Èç¹ûÓöµ½Òì³££¬jvm»á×Ô¶¯ÊÍ·ÅËø£¬µ«ÊÇlock±ØĞëÊÖ¶¯ÊÍ·ÅËø£¬Òò´Ë¾­³£ÔÚfinallyÖĞ½øĞĞËøµÄÊÍ·Å
- * @author mashibing
+ * ä½¿ç”¨ reentrantlock å¯ä»¥å®ŒæˆåŒæ ·çš„åŠŸèƒ½
+ * éœ€è¦æ³¨æ„çš„æ˜¯ï¼Œå¿…é¡»è¦å¿…é¡»è¦å¿…é¡»è¦æ‰‹åŠ¨é‡Šæ”¾é”ï¼ˆé‡è¦çš„äº‹æƒ…è¯´ä¸‰éï¼‰
+ * ä½¿ç”¨ synchronized é”å®šçš„è¯å¦‚æœé‡åˆ°å¼‚å¸¸ï¼Œjvmä¼šè‡ªåŠ¨é‡Šæ”¾é”ï¼Œä½†æ˜¯ lock å¿…é¡»æ‰‹åŠ¨é‡Šæ”¾é”ï¼Œå› æ­¤ç»å¸¸åœ¨ finally ä¸­è¿›è¡Œé”çš„é‡Šæ”¾
  */
 package com.mashibing.juc.c_020;
 
@@ -15,41 +10,44 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class T02_ReentrantLock2 {
-	Lock lock = new ReentrantLock();
+    // ä¸åŒçš„çº¿ç¨‹äº‰ç”¨åŒä¸€æŠŠé”ï¼Œä¼šå‡ºç°ç«äº‰
+    Lock lock = new ReentrantLock();
 
-	void m1() {
-		try {
-			lock.lock(); //synchronized(this)
-			for (int i = 0; i < 10; i++) {
-				TimeUnit.SECONDS.sleep(1);
+    void m1() {
+        try {
+            lock.lock(); // ç±»ä¼¼ synchronized(this)
+            System.out.println(this); // å…¶å®æ˜¯é” this å¯¹è±¡ï¼Œå®ƒæ˜¯ T02_ReentrantLock2 çš„ä¸€ä¸ªå¯¹è±¡
+            for (int i = 0; i < 10; i++) {
+                TimeUnit.SECONDS.sleep(1);
+                System.out.println(i);
+            }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } finally {
+            lock.unlock(); // ä¸€å®šè¦è§£é”ï¼Œå¦åˆ™ä¼šå‘ç”Ÿæ­»é”
+        }
+    }
 
-				System.out.println(i);
-			}
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		} finally {
-			lock.unlock();
-		}
-	}
+    void m2() {
+        try {
+            lock.lock();
+            System.out.println(this); // å…¶å®æ˜¯é” this å¯¹è±¡,å®ƒæ˜¯ T02_ReentrantLock2 çš„ä¸€ä¸ªå¯¹è±¡
+            System.out.println("m2 ...");
+        } finally {
+            lock.unlock();
+        }
+    }
 
-	void m2() {
-		try {
-			lock.lock();
-			System.out.println("m2 ...");
-		} finally {
-			lock.unlock();
-		}
-
-	}
-
-	public static void main(String[] args) {
-		T02_ReentrantLock2 rl = new T02_ReentrantLock2();
-		new Thread(rl::m1).start();
-		try {
-			TimeUnit.SECONDS.sleep(1);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		new Thread(rl::m2).start();
-	}
+    public static void main(String[] args) {
+        T02_ReentrantLock2 rl = new T02_ReentrantLock2();
+        // çº¿ç¨‹1 ä½¿ç”¨ lock è¿™æŠŠé”
+        new Thread(rl::m1).start();
+        try {
+            TimeUnit.SECONDS.sleep(1);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        // çº¿ç¨‹2 ä½¿ç”¨ lock è¿™æŠŠé”
+        new Thread(rl::m2).start();
+    }
 }
