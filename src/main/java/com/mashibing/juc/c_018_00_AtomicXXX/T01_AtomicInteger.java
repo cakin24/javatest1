@@ -1,7 +1,6 @@
 /**
- * ½â¾öÍ¬ÑùµÄÎÊÌâµÄ¸ü¸ßĞ§µÄ·½·¨£¬Ê¹ÓÃAtomXXXÀà
- * AtomXXXÀà±¾Éí·½·¨¶¼ÊÇÔ­×ÓĞÔµÄ£¬µ«²»ÄÜ±£Ö¤¶à¸ö·½·¨Á¬Ğøµ÷ÓÃÊÇÔ­×ÓĞÔµÄ
- * @author mashibing
+ * è§£å†³åŒæ ·çš„é—®é¢˜çš„æ›´é«˜æ•ˆçš„æ–¹æ³•ï¼Œä½¿ç”¨AtomXXXç±»
+ * AtomXXXç±»æœ¬èº«æ–¹æ³•éƒ½æ˜¯åŸå­æ€§çš„ï¼Œä½†ä¸èƒ½ä¿è¯å¤šä¸ªæ–¹æ³•è¿ç»­è°ƒç”¨æ˜¯åŸå­æ€§çš„
  */
 package com.mashibing.juc.c_018_00_AtomicXXX;
 
@@ -12,26 +11,19 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class T01_AtomicInteger {
 	/*volatile*/ //int count1 = 0;
-	
-	AtomicInteger count = new AtomicInteger(0); 
-
-	/*synchronized*/ void m() { 
+	AtomicInteger count = new AtomicInteger(0);
+	/*synchronized*/ void m() {
 		for (int i = 0; i < 10000; i++)
-			//if count1.get() < 1000
-			count.incrementAndGet(); //count1++
+			// if count1.get() < 1000
+			count.incrementAndGet(); // çº¿ç¨‹å®‰å…¨çš„ count1++
 	}
-
 	public static void main(String[] args) {
 		T01_AtomicInteger t = new T01_AtomicInteger();
-
-		List<Thread> threads = new ArrayList<Thread>();
-
+		List<Thread> threads = new ArrayList<>();
 		for (int i = 0; i < 10; i++) {
 			threads.add(new Thread(t::m, "thread-" + i));
 		}
-
 		threads.forEach((o) -> o.start());
-
 		threads.forEach((o) -> {
 			try {
 				o.join();
@@ -39,9 +31,6 @@ public class T01_AtomicInteger {
 				e.printStackTrace();
 			}
 		});
-
 		System.out.println(t.count);
-
 	}
-
 }
