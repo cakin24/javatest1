@@ -1,14 +1,5 @@
 /**
- * reentrantlockÓÃÓÚÌæ´úsynchronized
- * ÓÉÓÚm1Ëø¶¨this,Ö»ÓĞm1Ö´ĞĞÍê±ÏµÄÊ±ºò,m2²ÅÄÜÖ´ĞĞ
- * ÕâÀïÊÇ¸´Ï°synchronized×îÔ­Ê¼µÄÓïÒå
- * 
- * Ê¹ÓÃreentrantlock¿ÉÒÔÍê³ÉÍ¬ÑùµÄ¹¦ÄÜ
- * ĞèÒª×¢ÒâµÄÊÇ£¬±ØĞëÒª±ØĞëÒª±ØĞëÒªÊÖ¶¯ÊÍ·ÅËø£¨ÖØÒªµÄÊÂÇéËµÈı±é£©
- * Ê¹ÓÃsynËø¶¨µÄ»°Èç¹ûÓöµ½Òì³££¬jvm»á×Ô¶¯ÊÍ·ÅËø£¬µ«ÊÇlock±ØĞëÊÖ¶¯ÊÍ·ÅËø£¬Òò´Ë¾­³£ÔÚfinallyÖĞ½øĞĞËøµÄÊÍ·Å
- * 
- * Ê¹ÓÃreentrantlock¿ÉÒÔ½øĞĞ¡°³¢ÊÔËø¶¨¡±tryLock£¬ÕâÑùÎŞ·¨Ëø¶¨£¬»òÕßÔÚÖ¸¶¨Ê±¼äÄÚÎŞ·¨Ëø¶¨£¬Ïß³Ì¿ÉÒÔ¾ö¶¨ÊÇ·ñ¼ÌĞøµÈ´ı
- * @author mashibing
+ * ä½¿ç”¨ reentrantlock å¯ä»¥è¿›è¡Œâ€œå°è¯•é”å®šâ€ tryLockï¼Œè¿™æ ·æ— æ³•é”å®šï¼Œæˆ–è€…åœ¨æŒ‡å®šæ—¶é—´å†…æ— æ³•é”å®šï¼Œçº¿ç¨‹å¯ä»¥å†³å®šæ˜¯å¦ç»§ç»­ç­‰å¾…
  */
 package com.mashibing.juc.c_020;
 
@@ -17,56 +8,56 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class T03_ReentrantLock3 {
-	Lock lock = new ReentrantLock();
+    Lock lock = new ReentrantLock();
 
-	void m1() {
-		try {
-			lock.lock();
-			for (int i = 0; i < 3; i++) {
-				TimeUnit.SECONDS.sleep(1);
+    void m1() {
+        try {
+            lock.lock();
+            for (int i = 0; i < 3 /*3*/; i++) {
+                TimeUnit.SECONDS.sleep(1);
+                System.out.println(i);
+            }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } finally {
+            lock.unlock();
+        }
+    }
 
-				System.out.println(i);
-			}
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		} finally {
-			lock.unlock();
-		}
-	}
-
-	/**
-	 * Ê¹ÓÃtryLock½øĞĞ³¢ÊÔËø¶¨£¬²»¹ÜËø¶¨Óë·ñ£¬·½·¨¶¼½«¼ÌĞøÖ´ĞĞ
-	 * ¿ÉÒÔ¸ù¾İtryLockµÄ·µ»ØÖµÀ´ÅĞ¶¨ÊÇ·ñËø¶¨
-	 * Ò²¿ÉÒÔÖ¸¶¨tryLockµÄÊ±¼ä£¬ÓÉÓÚtryLock(time)Å×³öÒì³££¬ËùÒÔÒª×¢ÒâunclockµÄ´¦Àí£¬±ØĞë·Åµ½finallyÖĞ
-	 */
-	void m2() {
+    /**
+     * ä½¿ç”¨ tryLock è¿›è¡Œå°è¯•é”å®šï¼Œä¸ç®¡é”å®šä¸å¦ï¼Œæ–¹æ³•éƒ½å°†ç»§ç»­æ‰§è¡Œ
+     * å¯ä»¥æ ¹æ® tryLock çš„è¿”å›å€¼æ¥åˆ¤å®šæ˜¯å¦é”å®š
+     * ä¹Ÿå¯ä»¥æŒ‡å®š tryLock çš„æ—¶é—´ï¼Œç”±äº tryLock(time)æŠ›å‡ºå¼‚å¸¸ï¼Œæ‰€ä»¥è¦æ³¨æ„ unclock çš„å¤„ç†ï¼Œå¿…é¡»æ”¾åˆ° finally ä¸­
+     */
+    void m2() {
 		/*
 		boolean locked = lock.tryLock();
 		System.out.println("m2 ..." + locked);
 		if(locked) lock.unlock();
 		*/
-		
-		boolean locked = false;
-		
-		try {
-			locked = lock.tryLock(5, TimeUnit.SECONDS);
-			System.out.println("m2 ..." + locked);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		} finally {
-			if(locked) lock.unlock();
-		}
-		
-	}
+        boolean locked = false;
+        try {
+            locked = lock.tryLock(5, TimeUnit.SECONDS);
+            if(locked == true){
+                System.out.println("æ‹¿åˆ°é”çš„å¤„ç†é€»è¾‘"); // å½“ç­‰ 3 ç§’ï¼Œèµ°è¯¥é€»è¾‘
+            } else {
+                System.out.println("æ²¡æ‹¿åˆ°é”çš„å¤„ç†é€»è¾‘"); // å½“ç­‰ 10 ç§’ï¼Œèµ°è¯¥é€»è¾‘
+            }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } finally {
+            if (locked) lock.unlock();
+        }
+    }
 
-	public static void main(String[] args) {
-		T03_ReentrantLock3 rl = new T03_ReentrantLock3();
-		new Thread(rl::m1).start();
-		try {
-			TimeUnit.SECONDS.sleep(1);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		new Thread(rl::m2).start();
-	}
+    public static void main(String[] args) {
+        T03_ReentrantLock3 rl = new T03_ReentrantLock3();
+        new Thread(rl::m1).start();
+        try {
+            TimeUnit.SECONDS.sleep(1);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        new Thread(rl::m2).start();
+    }
 }

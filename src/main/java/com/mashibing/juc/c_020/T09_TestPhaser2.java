@@ -18,40 +18,33 @@ public class T09_TestPhaser2 {
     }
 
     public static void main(String[] args) {
-
+        // 7 äººå©šç¤¼
         phaser.bulkRegister(7);
-
-        for(int i=0; i<5; i++) {
-
+        // å®¢äººå‚åŠ å©šç¤¼
+        for (int i = 0; i < 5; i++) {
             new Thread(new Person("p" + i)).start();
         }
-
-        new Thread(new Person("ÐÂÀÉ")).start();
-        new Thread(new Person("ÐÂÄï")).start();
-
+        // æ–°å©šå¤«å¦‡å‚åŠ å©šç¤¼
+        new Thread(new Person("æ–°éƒŽ")).start();
+        new Thread(new Person("æ–°å¨˜")).start();
     }
 
-
-
     static class MarriagePhaser extends Phaser {
+        // å½“7ä¸ªçº¿ç¨‹éƒ½åˆ°è¾¾æ …æ ï¼Œæ‰è°ƒç”¨è¿™ä¸ª
         @Override
         protected boolean onAdvance(int phase, int registeredParties) {
-
             switch (phase) {
                 case 0:
-                    System.out.println("ËùÓÐÈËµ½ÆëÁË£¡" + registeredParties);
-                    System.out.println();
+                    System.out.println("æ‰€æœ‰äººåˆ°é½äº†ï¼" + registeredParties);
                     return false;
                 case 1:
-                    System.out.println("ËùÓÐÈË³ÔÍêÁË£¡" + registeredParties);
-                    System.out.println();
+                    System.out.println("æ‰€æœ‰äººåƒå®Œäº†ï¼" + registeredParties);
                     return false;
                 case 2:
-                    System.out.println("ËùÓÐÈËÀë¿ªÁË£¡" + registeredParties);
-                    System.out.println();
+                    System.out.println("æ‰€æœ‰äººç¦»å¼€äº†ï¼" + registeredParties);
                     return false;
                 case 3:
-                    System.out.println("»éÀñ½áÊø£¡ÐÂÀÉÐÂÄï±§±§£¡" + registeredParties);
+                    System.out.println("å©šç¤¼ç»“æŸï¼æ–°éƒŽæ–°å¨˜æŠ±æŠ±ï¼" + registeredParties);
                     return true;
                 default:
                     return true;
@@ -68,32 +61,31 @@ public class T09_TestPhaser2 {
         }
 
         public void arrive() {
-
             milliSleep(r.nextInt(1000));
-            System.out.printf("%s µ½´ïÏÖ³¡£¡\n", name);
+            System.out.printf("%s åˆ°è¾¾çŽ°åœºï¼\n", name);
+            // æŸä¸ªçº¿ç¨‹åˆ°è¾¾æ …æ ï¼Œå°±åœä½ï¼Œç›´åˆ°æ‰€æœ‰çº¿ç¨‹éƒ½å®Œæˆï¼Œæ‰æŽ¨å€’æ …æ ï¼Œç»§ç»­å¾€å‰èµ°
             phaser.arriveAndAwaitAdvance();
         }
 
         public void eat() {
             milliSleep(r.nextInt(1000));
-            System.out.printf("%s ³ÔÍê!\n", name);
+            System.out.printf("%s åƒå®Œ!\n", name);
             phaser.arriveAndAwaitAdvance();
         }
 
         public void leave() {
             milliSleep(r.nextInt(1000));
-            System.out.printf("%s Àë¿ª£¡\n", name);
-
-
+            System.out.printf("%s ç¦»å¼€ï¼\n", name);
             phaser.arriveAndAwaitAdvance();
         }
 
         private void hug() {
-            if(name.equals("ÐÂÀÉ") || name.equals("ÐÂÄï")) {
+            if (name.equals("æ–°éƒŽ") || name.equals("æ–°å¨˜")) {
                 milliSleep(r.nextInt(1000));
-                System.out.printf("%s ¶´·¿£¡\n", name);
+                System.out.printf("%s æ´žæˆ¿ï¼\n", name);
                 phaser.arriveAndAwaitAdvance();
             } else {
+                // å…¶ä»–çº¿ç¨‹è§£æ³¨å†Œ
                 phaser.arriveAndDeregister();
                 //phaser.register()
             }
@@ -102,16 +94,13 @@ public class T09_TestPhaser2 {
         @Override
         public void run() {
             arrive();
-
-
+            System.out.println("æ‰€æœ‰äººåˆ°é½äº†ï¼----------------");
             eat();
-
-
+            System.out.println("æ‰€æœ‰äººåƒå®Œäº†ï¼----------------");
             leave();
-
-
+            System.out.println("æ‰€æœ‰äººç¦»å¼€äº†ï¼----------------");
             hug();
-
+            System.out.println("å©šç¤¼ç»“æŸï¼æ–°éƒŽæ–°å¨˜æŠ±æŠ±ï¼--------");
         }
     }
 }
