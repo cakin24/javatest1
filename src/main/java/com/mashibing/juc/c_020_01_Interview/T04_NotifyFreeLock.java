@@ -1,19 +1,20 @@
 /**
- * Ôø¾­µÄÃæÊÔÌâ£º£¨ÌÔ±¦£¿£©
- * ÊµÏÖÒ»¸öÈÝÆ÷£¬Ìá¹©Á½¸ö·½·¨£¬add£¬size
- * Ð´Á½¸öÏß³Ì£¬Ïß³Ì1Ìí¼Ó10¸öÔªËØµ½ÈÝÆ÷ÖÐ£¬Ïß³Ì2ÊµÏÖ¼à¿ØÔªËØµÄ¸öÊý£¬µ±¸öÊýµ½5¸öÊ±£¬Ïß³Ì2¸ø³öÌáÊ¾²¢½áÊø
- * 
- * ¸ølistsÌí¼ÓvolatileÖ®ºó£¬t2ÄÜ¹»½Óµ½Í¨Öª£¬µ«ÊÇ£¬t2Ïß³ÌµÄËÀÑ­»·ºÜÀË·Ñcpu£¬Èç¹û²»ÓÃËÀÑ­»·£¬¸ÃÔõÃ´×öÄØ£¿
- * 
- * ÕâÀïÊ¹ÓÃwaitºÍnotify×öµ½£¬wait»áÊÍ·ÅËø£¬¶ønotify²»»áÊÍ·ÅËø
- * ÐèÒª×¢ÒâµÄÊÇ£¬ÔËÓÃÕâÖÖ·½·¨£¬±ØÐëÒª±£Ö¤t2ÏÈÖ´ÐÐ£¬Ò²¾ÍÊÇÊ×ÏÈÈÃt2¼àÌý²Å¿ÉÒÔ
- * 
- * ÔÄ¶ÁÏÂÃæµÄ³ÌÐò£¬²¢·ÖÎöÊä³ö½á¹û
- * ¿ÉÒÔ¶Áµ½Êä³ö½á¹û²¢²»ÊÇsize=5Ê±t2ÍË³ö£¬¶øÊÇt1½áÊøÊ±t2²Å½ÓÊÕµ½Í¨Öª¶øÍË³ö
- * ÏëÏëÕâÊÇÎªÊ²Ã´£¿
- * 
- * notifyÖ®ºó£¬t1±ØÐëÊÍ·ÅËø£¬t2ÍË³öºó£¬Ò²±ØÐënotify£¬Í¨Öªt1¼ÌÐøÖ´ÐÐ
- * Õû¸öÍ¨ÐÅ¹ý³Ì±È½Ï·±Ëö
+ * æ›¾ç»çš„é¢è¯•é¢˜ï¼šï¼ˆæ·˜å®ï¼Ÿï¼‰
+ * å®žçŽ°ä¸€ä¸ªå®¹å™¨ï¼Œæä¾›ä¸¤ä¸ªæ–¹æ³•ï¼Œaddï¼Œsize
+ * å†™ä¸¤ä¸ªçº¿ç¨‹ï¼Œçº¿ç¨‹1æ·»åŠ 10ä¸ªå…ƒç´ åˆ°å®¹å™¨ä¸­ï¼Œçº¿ç¨‹2å®žçŽ°ç›‘æŽ§å…ƒç´ çš„ä¸ªæ•°ï¼Œå½“ä¸ªæ•°åˆ°5ä¸ªæ—¶ï¼Œçº¿ç¨‹2ç»™å‡ºæç¤ºå¹¶ç»“æŸ
+ * <p>
+ * ç»™listsæ·»åŠ volatileä¹‹åŽï¼Œt2èƒ½å¤ŸæŽ¥åˆ°é€šçŸ¥ï¼Œä½†æ˜¯ï¼Œt2çº¿ç¨‹çš„æ­»å¾ªçŽ¯å¾ˆæµªè´¹cpuï¼Œå¦‚æžœä¸ç”¨æ­»å¾ªçŽ¯ï¼Œè¯¥æ€Žä¹ˆåšå‘¢ï¼Ÿ
+ * <p>
+ * è¿™é‡Œä½¿ç”¨waitå’Œnotifyåšåˆ°ï¼Œwaitä¼šé‡Šæ”¾é”ï¼Œè€Œnotifyä¸ä¼šé‡Šæ”¾é”
+ * éœ€è¦æ³¨æ„çš„æ˜¯ï¼Œè¿ç”¨è¿™ç§æ–¹æ³•ï¼Œå¿…é¡»è¦ä¿è¯t2å…ˆæ‰§è¡Œï¼Œä¹Ÿå°±æ˜¯é¦–å…ˆè®©t2ç›‘å¬æ‰å¯ä»¥
+ * <p>
+ * é˜…è¯»ä¸‹é¢çš„ç¨‹åºï¼Œå¹¶åˆ†æžè¾“å‡ºç»“æžœ
+ * å¯ä»¥è¯»åˆ°è¾“å‡ºç»“æžœå¹¶ä¸æ˜¯size=5æ—¶t2é€€å‡ºï¼Œè€Œæ˜¯t1ç»“æŸæ—¶t2æ‰æŽ¥æ”¶åˆ°é€šçŸ¥è€Œé€€å‡º
+ * æƒ³æƒ³è¿™æ˜¯ä¸ºä»€ä¹ˆï¼Ÿ
+ * <p>
+ * notify ä¹‹åŽï¼Œt1 å¿…é¡»é‡Šæ”¾é”ï¼Œt2 é€€å‡ºåŽï¼Œä¹Ÿå¿…é¡» notifyï¼Œé€šçŸ¥ t1 ç»§ç»­æ‰§è¡Œ
+ * æ•´ä¸ªé€šä¿¡è¿‡ç¨‹æ¯”è¾ƒç¹ç
+ *
  * @author mashibing
  */
 package com.mashibing.juc.c_020_01_Interview;
@@ -22,74 +23,67 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-
 public class T04_NotifyFreeLock {
+    // æ·»åŠ  volatileï¼Œä½¿ t2 èƒ½å¤Ÿå¾—åˆ°é€šçŸ¥
+    volatile List lists = new ArrayList();
 
-	//Ìí¼Óvolatile£¬Ê¹t2ÄÜ¹»µÃµ½Í¨Öª
-	volatile List lists = new ArrayList();
+    public void add(Object o) {
+        lists.add(o);
+    }
 
-	public void add(Object o) {
-		lists.add(o);
-	}
+    public int size() {
+        return lists.size();
+    }
 
-	public int size() {
-		return lists.size();
-	}
-	
-	public static void main(String[] args) {
-		T04_NotifyFreeLock c = new T04_NotifyFreeLock();
-		
-		final Object lock = new Object();
-		
-		new Thread(() -> {
-			synchronized(lock) {
-				System.out.println("t2Æô¶¯");
-				if(c.size() != 5) {
-					try {
-						lock.wait();
-					} catch (InterruptedException e) {
-						e.printStackTrace();
-					}
-				}
-				System.out.println("t2 ½áÊø");
-				//Í¨Öªt1¼ÌÐøÖ´ÐÐ
-				lock.notify();
-			}
-			
-		}, "t2").start();
-		
-		try {
-			TimeUnit.SECONDS.sleep(1);
-		} catch (InterruptedException e1) {
-			e1.printStackTrace();
-		}
+    public static void main(String[] args) {
+        T04_NotifyFreeLock c = new T04_NotifyFreeLock();
 
-		new Thread(() -> {
-			System.out.println("t1Æô¶¯");
-			synchronized(lock) {
-				for(int i=0; i<10; i++) {
-					c.add(new Object());
-					System.out.println("add " + i);
-					
-					if(c.size() == 5) {
-						lock.notify();
-						//ÊÍ·ÅËø£¬ÈÃt2µÃÒÔÖ´ÐÐ
-						try {
-							lock.wait();
-						} catch (InterruptedException e) {
-							e.printStackTrace();
-						}
-					}
-					
-					try {
-						TimeUnit.SECONDS.sleep(1);
-					} catch (InterruptedException e) {
-						e.printStackTrace();
-					}
-				}
-			}
-		}, "t1").start();
-		
-		
-	}
+        final Object lock = new Object();
+
+        new Thread(() -> {
+            synchronized (lock) {
+                System.out.println("t2å¯åŠ¨");
+                if (c.size() != 5) {
+                    try {
+                        lock.wait();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+                System.out.println("t2 ç»“æŸ");
+                // é€šçŸ¥ t1 ç»§ç»­æ‰§è¡Œ
+                lock.notify();
+            }
+        }, "t2").start();
+
+        try {
+            TimeUnit.SECONDS.sleep(1);
+        } catch (InterruptedException e1) {
+            e1.printStackTrace();
+        }
+
+        new Thread(() -> {
+            System.out.println("t1å¯åŠ¨");
+            synchronized (lock) {
+                for (int i = 0; i < 10; i++) {
+                    c.add(new Object());
+                    System.out.println("add " + i);
+                    if (c.size() == 5) {
+                        lock.notify();
+                        // é‡Šæ”¾é”ï¼Œè®© t2 å¾—ä»¥æ‰§è¡Œ
+                        try {
+                            lock.wait();
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+/*                    try {
+                        TimeUnit.SECONDS.sleep(1);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }*/
+                }
+            }
+        }, "t1").start();
+    }
 }

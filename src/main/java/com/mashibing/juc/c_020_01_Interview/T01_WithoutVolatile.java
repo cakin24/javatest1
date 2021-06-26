@@ -1,10 +1,7 @@
 /**
- * Ôø¾­µÄÃæÊÔÌâ£º£¨ÌÔ±¦£¿£©
- * ÊµÏÖÒ»¸öÈİÆ÷£¬Ìá¹©Á½¸ö·½·¨£¬add£¬size
- * Ğ´Á½¸öÏß³Ì£¬Ïß³Ì1Ìí¼Ó10¸öÔªËØµ½ÈİÆ÷ÖĞ£¬Ïß³Ì2ÊµÏÖ¼à¿ØÔªËØµÄ¸öÊı£¬µ±¸öÊıµ½5¸öÊ±£¬Ïß³Ì2¸ø³öÌáÊ¾²¢½áÊø
- * 
- * ·ÖÎöÏÂÃæÕâ¸ö³ÌĞò£¬ÄÜÍê³ÉÕâ¸ö¹¦ÄÜÂğ£¿
- * @author mashibing
+ * æ›¾ç»çš„é¢è¯•é¢˜ï¼šï¼ˆæ·˜å®ï¼Ÿï¼‰
+ * å®ç°ä¸€ä¸ªå®¹å™¨ï¼Œæä¾›ä¸¤ä¸ªæ–¹æ³•ï¼Œaddï¼Œsize
+ * å†™ä¸¤ä¸ªçº¿ç¨‹ï¼Œçº¿ç¨‹1æ·»åŠ 10ä¸ªå…ƒç´ åˆ°å®¹å™¨ä¸­ï¼Œçº¿ç¨‹2å®ç°ç›‘æ§å…ƒç´ çš„ä¸ªæ•°ï¼Œå½“ä¸ªæ•°åˆ°5ä¸ªæ—¶ï¼Œçº¿ç¨‹2ç»™å‡ºæç¤ºå¹¶ç»“æŸ
  */
 package com.mashibing.juc.c_020_01_Interview;
 
@@ -12,42 +9,39 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-
 public class T01_WithoutVolatile {
+    List lists = new ArrayList();
 
-	List lists = new ArrayList();
+    public void add(Object o) {
+        lists.add(o);
+    }
 
-	public void add(Object o) {
-		lists.add(o);
-	}
+    public int size() {
+        return lists.size();
+    }
 
-	public int size() {
-		return lists.size();
-	}
-	
-	public static void main(String[] args) {
-		T01_WithoutVolatile c = new T01_WithoutVolatile();
-
-		new Thread(() -> {
-			for(int i=0; i<10; i++) {
-				c.add(new Object());
-				System.out.println("add " + i);
-				
-				try {
-					TimeUnit.SECONDS.sleep(1);
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
-			}
-		}, "t1").start();
-		
-		new Thread(() -> {
-			while(true) {
-				if(c.size() == 5) {
-					break;
-				}
-			}
-			System.out.println("t2 ½áÊø");
-		}, "t2").start();
-	}
+    public static void main(String[] args) {
+        T01_WithoutVolatile c = new T01_WithoutVolatile();
+        // å†™çº¿ç¨‹
+        new Thread(() -> {
+            for (int i = 0; i < 10; i++) {
+                c.add(new Object());
+                System.out.println("add " + i);
+                try {
+                    TimeUnit.SECONDS.sleep(1);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }, "t1").start();
+        // ç›‘æµ‹çº¿ç¨‹
+        new Thread(() -> {
+            while (true) {
+                if (c.size() == 5) {
+                    break;
+                }
+            }
+            System.out.println("t2 ç»“æŸ");
+        }, "t2").start();
+    }
 }

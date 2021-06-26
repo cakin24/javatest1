@@ -1,11 +1,12 @@
 /**
- * Ôø¾­µÄÃæÊÔÌâ£º£¨ÌÔ±¦£¿£©
- * ÊµÏÖÒ»¸öÈİÆ÷£¬Ìá¹©Á½¸ö·½·¨£¬add£¬size
- * Ğ´Á½¸öÏß³Ì£¬Ïß³Ì1Ìí¼Ó10¸öÔªËØµ½ÈİÆ÷ÖĞ£¬Ïß³Ì2ÊµÏÖ¼à¿ØÔªËØµÄ¸öÊı£¬µ±¸öÊıµ½5¸öÊ±£¬Ïß³Ì2¸ø³öÌáÊ¾²¢½áÊø
- * 
- * ¸ølistsÌí¼ÓvolatileÖ®ºó£¬t2ÄÜ¹»½Óµ½Í¨Öª£¬µ«ÊÇ£¬t2Ïß³ÌµÄËÀÑ­»·ºÜÀË·Ñcpu£¬Èç¹û²»ÓÃËÀÑ­»·£¬
- * ¶øÇÒ£¬Èç¹ûÔÚif ºÍ breakÖ®¼ä±»±ğµÄÏß³Ì´ò¶Ï£¬µÃµ½µÄ½á¹ûÒ²²»¾«È·£¬
- * ¸ÃÔõÃ´×öÄØ£¿
+ * æ›¾ç»çš„é¢è¯•é¢˜ï¼šï¼ˆæ·˜å®ï¼Ÿï¼‰
+ * å®ç°ä¸€ä¸ªå®¹å™¨ï¼Œæä¾›ä¸¤ä¸ªæ–¹æ³•ï¼Œaddï¼Œsize
+ * å†™ä¸¤ä¸ªçº¿ç¨‹ï¼Œçº¿ç¨‹1æ·»åŠ 10ä¸ªå…ƒç´ åˆ°å®¹å™¨ä¸­ï¼Œçº¿ç¨‹2å®ç°ç›‘æ§å…ƒç´ çš„ä¸ªæ•°ï¼Œå½“ä¸ªæ•°åˆ°5ä¸ªæ—¶ï¼Œçº¿ç¨‹2ç»™å‡ºæç¤ºå¹¶ç»“æŸ
+ * <p>
+ * ç»™listsæ·»åŠ volatileä¹‹åï¼Œt2èƒ½å¤Ÿæ¥åˆ°é€šçŸ¥ï¼Œä½†æ˜¯ï¼Œt2çº¿ç¨‹çš„æ­»å¾ªç¯å¾ˆæµªè´¹cpuï¼Œå¦‚æœä¸ç”¨æ­»å¾ªç¯ï¼Œ
+ * è€Œä¸”ï¼Œå¦‚æœåœ¨if å’Œ breakä¹‹é—´è¢«åˆ«çš„çº¿ç¨‹æ‰“æ–­ï¼Œå¾—åˆ°çš„ç»“æœä¹Ÿä¸ç²¾ç¡®ï¼Œ
+ * è¯¥æ€ä¹ˆåšå‘¢ï¼Ÿ
+ *
  * @author mashibing
  */
 package com.mashibing.juc.c_020_01_Interview;
@@ -15,44 +16,44 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-
 public class T02_WithVolatile {
+    // æ·»åŠ  volatileï¼Œä½¿ t2 èƒ½å¤Ÿå¾—åˆ°é€šçŸ¥
+    // volatile List lists = new LinkedList();
+    // ä½ç½®ä¸€
+    // ä½¿ç”¨åŒæ­¥å®¹å™¨ï¼Œå¹¶åŠ  volatile
+    /*volatile*/ List lists = Collections.synchronizedList(new LinkedList<>());
 
-	//Ìí¼Óvolatile£¬Ê¹t2ÄÜ¹»µÃµ½Í¨Öª
-	//volatile List lists = new LinkedList();
-	volatile List lists = Collections.synchronizedList(new LinkedList<>());
+    public void add(Object o) {
+        lists.add(o);
+    }
 
-	public void add(Object o) {
-		lists.add(o);
-	}
+    public int size() {
+        return lists.size();
+    }
 
-	public int size() {
-		return lists.size();
-	}
+    public static void main(String[] args) {
+        T02_WithVolatile c = new T02_WithVolatile();
+        new Thread(() -> {
+            for (int i = 0; i < 10; i++) {
+                c.add(new Object());
+                System.out.println("add " + i);
+                // ä½ç½®äºŒ
+                // ç­‰å¾… 1 ç§’
+                try {
+                    TimeUnit.SECONDS.sleep(1);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }, "t1").start();
 
-	public static void main(String[] args) {
-
-		T02_WithVolatile c = new T02_WithVolatile();
-		new Thread(() -> {
-			for(int i=0; i<10; i++) {
-				c.add(new Object());
-				System.out.println("add " + i);
-				
-				/*try {
-					TimeUnit.SECONDS.sleep(1);
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}*/
-			}
-		}, "t1").start();
-		
-		new Thread(() -> {
-			while(true) {
-				if(c.size() == 5) {
-					break;
-				}
-			}
-			System.out.println("t2 ½áÊø");
-		}, "t2").start();
-	}
+        new Thread(() -> {
+            while (true) {
+                if (c.size() == 5) {
+                    break;
+                }
+            }
+            System.out.println("t2 ç»“æŸ");
+        }, "t2").start();
+    }
 }

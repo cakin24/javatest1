@@ -34,9 +34,14 @@
   <component name="ChangeListManager">
     <list default="true" id="0bc6153e-427e-4b65-a0a4-491de75f6135" name="Default" comment="项目整理">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020/T11_TestSemaphore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020/T11_TestSemaphore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020/T12_TestExchanger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020/T12_TestExchanger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020/T13_TestLockSupport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020/T13_TestLockSupport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020_01_Interview/T01_WithoutVolatile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020_01_Interview/T01_WithoutVolatile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020_01_Interview/T02_WithVolatile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020_01_Interview/T02_WithVolatile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020_01_Interview/T03_NotifyHoldingLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020_01_Interview/T03_NotifyHoldingLock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020_01_Interview/T04_NotifyFreeLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020_01_Interview/T04_NotifyFreeLock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020_01_Interview/T05_CountDownLatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020_01_Interview/T05_CountDownLatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020_01_Interview/T06_LockSupport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020_01_Interview/T06_LockSupport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020_01_Interview/T07_LockSupport_WithoutSleep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020_01_Interview/T07_LockSupport_WithoutSleep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020_01_Interview/T08_Semaphore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020_01_Interview/T08_Semaphore.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,20 +130,20 @@
       <recent name="F:\Javatest\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.T13_TestLockSupport">
+  <component name="RunManager" selected="Application.T08_Semaphore">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="T09_TestPhaser2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mashibing.juc.c_020.T09_TestPhaser2" />
+    <configuration name="T04_NotifyFreeLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mashibing.juc.c_020_01_Interview.T04_NotifyFreeLock" />
       <module name="Javatest" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mashibing.juc.c_020.*" />
+          <option name="PATTERN" value="com.mashibing.juc.c_020_01_Interview.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,13 +151,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T10_TestReadWriteLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mashibing.juc.c_020.T10_TestReadWriteLock" />
+    <configuration name="T05_CountDownLatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mashibing.juc.c_020_01_Interview.T05_CountDownLatch" />
       <module name="Javatest" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mashibing.juc.c_020.*" />
+          <option name="PATTERN" value="com.mashibing.juc.c_020_01_Interview.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -160,13 +165,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T11_TestSemaphore" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mashibing.juc.c_020.T11_TestSemaphore" />
+    <configuration name="T06_LockSupport" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mashibing.juc.c_020_01_Interview.T06_LockSupport" />
       <module name="Javatest" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mashibing.juc.c_020.*" />
+          <option name="PATTERN" value="com.mashibing.juc.c_020_01_Interview.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -174,13 +179,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T12_TestExchanger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mashibing.juc.c_020.T12_TestExchanger" />
+    <configuration name="T07_LockSupport_WithoutSleep" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mashibing.juc.c_020_01_Interview.T07_LockSupport_WithoutSleep" />
       <module name="Javatest" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mashibing.juc.c_020.*" />
+          <option name="PATTERN" value="com.mashibing.juc.c_020_01_Interview.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -188,13 +193,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T13_TestLockSupport" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mashibing.juc.c_020.T13_TestLockSupport" />
+    <configuration name="T08_Semaphore" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mashibing.juc.c_020_01_Interview.T08_Semaphore" />
       <module name="Javatest" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mashibing.juc.c_020.*" />
+          <option name="PATTERN" value="com.mashibing.juc.c_020_01_Interview.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -234,19 +239,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.T09_TestPhaser2" />
-      <item itemvalue="Application.T10_TestReadWriteLock" />
-      <item itemvalue="Application.T11_TestSemaphore" />
-      <item itemvalue="Application.T12_TestExchanger" />
-      <item itemvalue="Application.T13_TestLockSupport" />
+      <item itemvalue="Application.T04_NotifyFreeLock" />
+      <item itemvalue="Application.T05_CountDownLatch" />
+      <item itemvalue="Application.T06_LockSupport" />
+      <item itemvalue="Application.T07_LockSupport_WithoutSleep" />
+      <item itemvalue="Application.T08_Semaphore" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.T13_TestLockSupport" />
-        <item itemvalue="Application.T12_TestExchanger" />
-        <item itemvalue="Application.T11_TestSemaphore" />
-        <item itemvalue="Application.T10_TestReadWriteLock" />
-        <item itemvalue="Application.T09_TestPhaser2" />
+        <item itemvalue="Application.T08_Semaphore" />
+        <item itemvalue="Application.T07_LockSupport_WithoutSleep" />
+        <item itemvalue="Application.T06_LockSupport" />
+        <item itemvalue="Application.T05_CountDownLatch" />
+        <item itemvalue="Application.T04_NotifyFreeLock" />
       </list>
     </recent_temporary>
   </component>
@@ -291,14 +296,8 @@
       <workItem from="1624529664232" duration="3681000" />
       <workItem from="1624582792649" duration="20000" />
       <workItem from="1624622012483" duration="3649000" />
-      <workItem from="1624693064700" duration="4662000" />
-    </task>
-    <task id="LOCAL-00018" summary="静态代理">
-      <created>1584602544325</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1584602544325</updated>
+      <workItem from="1624693064700" duration="7209000" />
+      <workItem from="1624705412034" duration="4885000" />
     </task>
     <task id="LOCAL-00019" summary="静态代理">
       <created>1587267328749</created>
@@ -636,7 +635,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624625682249</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="项目整理">
+      <created>1624697773028</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1624697773029</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -670,12 +676,12 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2353" y="53" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1623840318451" />
-    <state x="580" y="106" key="CommitChangelistDialog2" timestamp="1624625680286">
+    <state x="580" y="106" key="CommitChangelistDialog2" timestamp="1624697771693">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="580" y="106" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624273648509" />
     <state x="2500" y="106" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624443510812" />
-    <state x="580" y="106" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1624625680286" />
+    <state x="580" y="106" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1624697771693" />
     <state width="404" height="466" key="DebuggerActiveHint" timestamp="1624445451410">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -684,30 +690,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1160" y="540" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1623575124298" />
-    <state width="1670" height="273" key="GridCell.Tab.0.bottom" timestamp="1624697296991">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="273" key="GridCell.Tab.0.bottom" timestamp="1624709625591">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="165" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624273816808" />
-    <state width="1877" height="222" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624533378476" />
-    <state width="1670" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1624697296991" />
-    <state width="1670" height="273" key="GridCell.Tab.0.center" timestamp="1624697296991">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624709625591" />
+    <state width="1877" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1624700327590" />
+    <state width="1877" height="273" key="GridCell.Tab.0.center" timestamp="1624709625591">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="165" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624273816808" />
-    <state width="1877" height="222" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624533378476" />
-    <state width="1670" height="273" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1624697296991" />
-    <state width="1670" height="273" key="GridCell.Tab.0.left" timestamp="1624697296991">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="273" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624709625591" />
+    <state width="1877" height="273" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1624700327590" />
+    <state width="1877" height="273" key="GridCell.Tab.0.left" timestamp="1624709625591">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="165" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624273816807" />
-    <state width="1877" height="222" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624533378475" />
-    <state width="1670" height="273" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1624697296991" />
-    <state width="1670" height="273" key="GridCell.Tab.0.right" timestamp="1624697296991">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="273" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624709625591" />
+    <state width="1877" height="273" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1624700327590" />
+    <state width="1877" height="273" key="GridCell.Tab.0.right" timestamp="1624709625591">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="165" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624273816808" />
-    <state width="1877" height="222" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624533378476" />
-    <state width="1670" height="273" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1624697296991" />
+    <state width="1877" height="273" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624709625591" />
+    <state width="1877" height="273" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1624700327590" />
     <state width="1877" height="243" key="GridCell.Tab.1.bottom" timestamp="1624453565449">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -732,12 +738,12 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="314" y="196" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1623577173672" />
-    <state x="451" y="183" key="Vcs.Push.Dialog.v2" timestamp="1624625684369">
+    <state x="451" y="183" key="Vcs.Push.Dialog.v2" timestamp="1624697774853">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624236732601" />
     <state x="2371" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624443514672" />
-    <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1624625684369" />
+    <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1624697774853" />
     <state x="753" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1624279121982">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

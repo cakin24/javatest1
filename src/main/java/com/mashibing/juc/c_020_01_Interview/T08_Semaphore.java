@@ -6,44 +6,39 @@ import java.util.concurrent.Semaphore;
 import java.util.concurrent.locks.LockSupport;
 
 public class T08_Semaphore {
-    // ����volatile��ʹt2�ܹ��õ�֪ͨ
+    // 添加 volatile，使 t2 能够得到通知
     volatile List lists = new ArrayList();
-
     public void add(Object o) {
         lists.add(o);
     }
-
     public int size() {
         return lists.size();
     }
-
     static Thread t1 = null, t2 = null;
-
     public static void main(String[] args) {
         T08_Semaphore c = new T08_Semaphore();
         Semaphore s = new Semaphore(1);
-
+        // 一个线程插入另外一个线程代码
         t1 = new Thread(() -> {
+            // 让 t1 先执行一部分代码
             try {
                 s.acquire();
                 for (int i = 0; i < 5; i++) {
                     c.add(new Object());
                     System.out.println("add " + i);
-
-
                 }
                 s.release();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-
+            // 让 t2 执行完
             try {
                 t2.start();
                 t2.join();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-
+            // 让 t1 把 剩下的代码执行完
             try {
                 s.acquire();
                 for (int i = 5; i < 10; i++) {
@@ -53,13 +48,12 @@ public class T08_Semaphore {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-
         }, "t1");
 
         t2 = new Thread(() -> {
             try {
                 s.acquire();
-                System.out.println("t2 ����");
+                System.out.println("t2 结束");
                 s.release();
             } catch (InterruptedException e) {
                 e.printStackTrace();
