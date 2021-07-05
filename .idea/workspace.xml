@@ -33,15 +33,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bc6153e-427e-4b65-a0a4-491de75f6135" name="Default" comment="项目整理">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter01/StackStruTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter02/ClassInitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter02/ClassLoaderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter02/ClassLoaderTest1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter02/ClassLoaderTest2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter02/ClinitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter02/ClinitTest1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter02/CustomClassLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter02/DeadThreadTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter02/HelloApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter02/HelloLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter02/StringTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter04/PCRegisterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter05/DynamicLinkingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter05/StackErrorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter05/StackFrameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter05/StringBuilderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter06/IhaveNatives.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter08/EscapeAnalysis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter08/GCTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter08/HeapDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter08/HeapDemo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter08/HeapInstanceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter08/HeapSpaceInitial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter08/OOMTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter08/StackAllocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter09/MethodAreaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter09/OOMTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter13/StringExer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter13/StringGCTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter13/StringIntern.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter13/StringIntern2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter13/StringNewTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter13/StringTest1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter13/StringTest5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter15/CanReliveObj.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter15/HeapOOM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter15/LocalVarGC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter15/PhantomReferenceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter15/RefCountGC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter16/SystemGCTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/java/chapter17/GCUseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020_01_Interview/T01_WithoutVolatile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020_01_Interview/T01_WithoutVolatile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020_01_Interview/T02_WithVolatile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020_01_Interview/T02_WithVolatile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020_01_Interview/T03_NotifyHoldingLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020_01_Interview/T03_NotifyHoldingLock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020_01_Interview/T04_NotifyFreeLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020_01_Interview/T04_NotifyFreeLock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020_01_Interview/T05_CountDownLatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020_01_Interview/T05_CountDownLatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020_01_Interview/T06_LockSupport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020_01_Interview/T06_LockSupport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020_01_Interview/T07_LockSupport_WithoutSleep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020_01_Interview/T07_LockSupport_WithoutSleep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020_01_Interview/T08_Semaphore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020_01_Interview/T08_Semaphore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_021_01_interview/MyContainer1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_021_01_interview/MyContainer1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_021_01_interview/MyContainer2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_021_01_interview/MyContainer2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +135,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/DataBaseProxy" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/mashibing" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/atguigu" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -112,38 +148,40 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\javatest1\src\main\java\com\mashibing" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\javatest1\src\main\java\com\atguigu" />
       <recent name="E:\javatest1\src\main\java\com" />
-      <recent name="E:\javatest1\src\main\java\invoice" />
       <recent name="F:\Javatest\src\main\resources" />
-      <recent name="F:\Javatest\src\main\java\CollectionPart" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.atguigu.java.chapter02" />
       <recent name="jmm" />
       <recent name="jvm" />
       <recent name="toolutils" />
       <recent name="CGlib" />
-      <recent name="GPProxy" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\javatest1\src\main\java\com\atguigu" />
+      <recent name="E:\javatest1\src\main\java\com\mashibing" />
+      <recent name="E:\javatest1\src\main\java\com" />
+      <recent name="E:\javatest1\src\main\java\invoice" />
       <recent name="F:\Javatest\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.T08_Semaphore">
+  <component name="RunManager" selected="Application.Lambda">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="T04_NotifyFreeLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mashibing.juc.c_020_01_Interview.T04_NotifyFreeLock" />
+    <configuration name="Lambda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.java2.Lambda" />
       <module name="Javatest" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mashibing.juc.c_020_01_Interview.*" />
+          <option name="PATTERN" value="com.atguigu.java2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,13 +189,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T05_CountDownLatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mashibing.juc.c_020_01_Interview.T05_CountDownLatch" />
+    <configuration name="LocalVariablesTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.java1.LocalVariablesTest" />
       <module name="Javatest" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mashibing.juc.c_020_01_Interview.*" />
+          <option name="PATTERN" value="com.atguigu.java1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -165,13 +203,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T06_LockSupport" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mashibing.juc.c_020_01_Interview.T06_LockSupport" />
+    <configuration name="OperandStackTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.java1.OperandStackTest" />
       <module name="Javatest" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mashibing.juc.c_020_01_Interview.*" />
+          <option name="PATTERN" value="com.atguigu.java1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -179,13 +217,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T07_LockSupport_WithoutSleep" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mashibing.juc.c_020_01_Interview.T07_LockSupport_WithoutSleep" />
+    <configuration name="Son" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.java2.Son" />
       <module name="Javatest" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mashibing.juc.c_020_01_Interview.*" />
+          <option name="PATTERN" value="com.atguigu.java2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -193,13 +231,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T08_Semaphore" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mashibing.juc.c_020_01_Interview.T08_Semaphore" />
+    <configuration name="StackFrameTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.java.chapter05.StackFrameTest" />
       <module name="Javatest" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mashibing.juc.c_020_01_Interview.*" />
+          <option name="PATTERN" value="com.atguigu.java.chapter05.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -239,19 +277,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.T04_NotifyFreeLock" />
-      <item itemvalue="Application.T05_CountDownLatch" />
-      <item itemvalue="Application.T06_LockSupport" />
-      <item itemvalue="Application.T07_LockSupport_WithoutSleep" />
-      <item itemvalue="Application.T08_Semaphore" />
+      <item itemvalue="Application.StackFrameTest" />
+      <item itemvalue="Application.LocalVariablesTest" />
+      <item itemvalue="Application.OperandStackTest" />
+      <item itemvalue="Application.Son" />
+      <item itemvalue="Application.Lambda" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.T08_Semaphore" />
-        <item itemvalue="Application.T07_LockSupport_WithoutSleep" />
-        <item itemvalue="Application.T06_LockSupport" />
-        <item itemvalue="Application.T05_CountDownLatch" />
-        <item itemvalue="Application.T04_NotifyFreeLock" />
+        <item itemvalue="Application.Lambda" />
+        <item itemvalue="Application.Son" />
+        <item itemvalue="Application.OperandStackTest" />
+        <item itemvalue="Application.LocalVariablesTest" />
+        <item itemvalue="Application.StackFrameTest" />
       </list>
     </recent_temporary>
   </component>
@@ -297,14 +335,25 @@
       <workItem from="1624582792649" duration="20000" />
       <workItem from="1624622012483" duration="3649000" />
       <workItem from="1624693064700" duration="7209000" />
-      <workItem from="1624705412034" duration="4885000" />
-    </task>
-    <task id="LOCAL-00019" summary="静态代理">
-      <created>1587267328749</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1587267328749</updated>
+      <workItem from="1624705412034" duration="4909000" />
+      <workItem from="1624762047859" duration="5525000" />
+      <workItem from="1624840533663" duration="595000" />
+      <workItem from="1624842480381" duration="469000" />
+      <workItem from="1624928551269" duration="1053000" />
+      <workItem from="1624962858724" duration="3351000" />
+      <workItem from="1625013330130" duration="5093000" />
+      <workItem from="1625018846716" duration="1156000" />
+      <workItem from="1625048837049" duration="2931000" />
+      <workItem from="1625055078983" duration="1648000" />
+      <workItem from="1625099730949" duration="3811000" />
+      <workItem from="1625131980156" duration="1505000" />
+      <workItem from="1625190063797" duration="27000" />
+      <workItem from="1625218843121" duration="1325000" />
+      <workItem from="1625267799104" duration="13438000" />
+      <workItem from="1625355599907" duration="5574000" />
+      <workItem from="1625377355629" duration="7558000" />
+      <workItem from="1625445737513" duration="1597000" />
+      <workItem from="1625480641528" duration="2020000" />
     </task>
     <task id="LOCAL-00020" summary="静态代理">
       <created>1587267653003</created>
@@ -642,7 +691,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624697773029</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="项目整理">
+      <created>1624710505901</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1624710505902</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -667,20 +723,20 @@
     <option name="LAST_COMMIT_MESSAGE" value="项目整理" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="819" y="274" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1624017600552">
+    <state x="653" y="204" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1625273174064">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="2739" y="274" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1623927356629" />
-    <state x="819" y="274" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1624017600552" />
+    <state x="653" y="204" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1625273174064" />
     <state x="2353" y="53" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1623840318451">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2353" y="53" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1623840318451" />
-    <state x="580" y="106" key="CommitChangelistDialog2" timestamp="1624697771693">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2500" y="106" key="CommitChangelistDialog2" timestamp="1625220520570">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="580" y="106" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624273648509" />
-    <state x="2500" y="106" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624443510812" />
+    <state x="2500" y="106" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625220520570" />
     <state x="580" y="106" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1624697771693" />
     <state width="404" height="466" key="DebuggerActiveHint" timestamp="1624445451410">
       <screen x="1920" y="0" width="1920" height="1040" />
@@ -690,68 +746,81 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1160" y="540" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1623575124298" />
-    <state width="1877" height="273" key="GridCell.Tab.0.bottom" timestamp="1624709625591">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="70" key="GridCell.Tab.0.bottom" timestamp="1625387614883">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="165" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624273816808" />
-    <state width="1877" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624709625591" />
-    <state width="1877" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1624700327590" />
-    <state width="1877" height="273" key="GridCell.Tab.0.center" timestamp="1624709625591">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="249" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625365970921" />
+    <state width="1877" height="70" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1625387614883" />
+    <state width="1877" height="70" key="GridCell.Tab.0.center" timestamp="1625387614883">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="165" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624273816808" />
-    <state width="1877" height="273" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624709625591" />
-    <state width="1877" height="273" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1624700327590" />
-    <state width="1877" height="273" key="GridCell.Tab.0.left" timestamp="1624709625591">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="249" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625365970921" />
+    <state width="1877" height="70" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1625387614883" />
+    <state width="1877" height="70" key="GridCell.Tab.0.left" timestamp="1625387614883">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="165" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624273816807" />
-    <state width="1877" height="273" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624709625591" />
-    <state width="1877" height="273" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1624700327590" />
-    <state width="1877" height="273" key="GridCell.Tab.0.right" timestamp="1624709625591">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1877" height="249" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625365970921" />
+    <state width="1877" height="70" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1625387614883" />
+    <state width="1877" height="70" key="GridCell.Tab.0.right" timestamp="1625387614883">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="165" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624273816808" />
-    <state width="1877" height="273" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624709625591" />
-    <state width="1877" height="273" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1624700327590" />
-    <state width="1877" height="243" key="GridCell.Tab.1.bottom" timestamp="1624453565449">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="249" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625365970921" />
+    <state width="1877" height="70" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1625387614883" />
+    <state width="1877" height="249" key="GridCell.Tab.1.bottom" timestamp="1625365970921">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="243" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624446107984" />
-    <state width="1877" height="243" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1624453565449" />
-    <state width="1877" height="243" key="GridCell.Tab.1.center" timestamp="1624453565449">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="249" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625365970921" />
+    <state width="1877" height="2" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1625293977435" />
+    <state width="1877" height="249" key="GridCell.Tab.1.center" timestamp="1625365970921">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="243" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624446107983" />
-    <state width="1877" height="243" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1624453565449" />
-    <state width="1877" height="243" key="GridCell.Tab.1.left" timestamp="1624453565449">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="249" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625365970921" />
+    <state width="1877" height="2" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1625293977434" />
+    <state width="1877" height="249" key="GridCell.Tab.1.left" timestamp="1625365970921">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="243" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624446107983" />
-    <state width="1877" height="243" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1624453565449" />
-    <state width="1877" height="243" key="GridCell.Tab.1.right" timestamp="1624453565449">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="249" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625365970921" />
+    <state width="1877" height="2" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1625293977434" />
+    <state width="1877" height="249" key="GridCell.Tab.1.right" timestamp="1625365970921">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="243" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624446107984" />
-    <state width="1877" height="243" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1624453565449" />
+    <state width="1877" height="249" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625365970921" />
+    <state width="1877" height="2" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1625293977435" />
     <state x="314" y="196" key="SettingsEditor" timestamp="1623577173672">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="314" y="196" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1623577173672" />
-    <state x="451" y="183" key="Vcs.Push.Dialog.v2" timestamp="1624697774853">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624236732601" />
-    <state x="2371" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624443514672" />
-    <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1624697774853" />
-    <state x="753" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1624279121982">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="753" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1624279121982" />
-    <state x="2582" y="254" width="596" height="532" key="find.popup" timestamp="1623926926743">
+    <state x="2371" y="183" key="Vcs.Push.Dialog.v2" timestamp="1624710509008">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2582" y="254" width="596" height="532" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1623926926743" />
+    <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624236732601" />
+    <state x="2371" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624710509008" />
+    <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1624697774853" />
+    <state width="926" height="889" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1625019133763">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="926" height="889" key="com.intellij.byteCodeViewer.ShowByteCodeAction/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625019133763" />
+    <state x="2673" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1624765275952">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2673" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624765275952" />
+    <state x="753" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1624279121982" />
+    <state x="2398" y="256" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1624766754657">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2398" y="256" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624766754657" />
+    <state x="2582" y="254" width="989" height="532" key="find.popup" timestamp="1625050860006">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2582" y="254" width="989" height="532" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625050860006" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1625049173936">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625049173936" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -871,25 +940,45 @@
           <line>16</line>
           <option name="timeStamp" value="45" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/toolutils/BeanUtilsTest.java</url>
           <line>31</line>
           <option name="timeStamp" value="51" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/jvm/MyClassLoader.java</url>
           <line>26</line>
           <option name="timeStamp" value="61" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_018_01_Unsafe/HelloUnsafe.java</url>
           <line>15</line>
           <option name="timeStamp" value="65" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_020/T04_ReentrantLock4.java</url>
           <line>29</line>
           <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mashibing/juc/c_021_02_AQS/TestReentrantLock.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://D:/ProgramFiles/Java/jdk1.8.0_251/src.zip!/java/util/concurrent/locks/ReentrantLock.java</url>
+          <line>284</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/ProgramFiles/Java/jdk1.8.0_251/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java</url>
+          <line>540</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/atguigu/java1/OperandStackTest.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="71" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.IndexOutOfBoundsException" package="java.lang" />
@@ -901,6 +990,9 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/test$Log.ic" NAME="Log Coverage Results" MODIFIED="1624017506341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>jvm.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/test$ClinitTest1.ic" NAME="ClinitTest1 Coverage Results" MODIFIED="1625018704982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.atguigu.java.chapter02.*</FILTER>
     </SUITE>
   </component>
   <component name="simpleUML.UMLToolWindowPlugin">
